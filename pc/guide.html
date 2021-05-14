@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<meta name="author" content="K파트너즈">
+	<meta name="keyword" content="K파트너즈">
+	<meta name="description" content="K파트너즈 홈페이지">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="/pc/ico/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/pc/css/kpCommon.css">
+	<link rel="stylesheet" href="/pc/css/vender/swiper.min.css"> <!-- 4.5.1 ver  -->
+	<script src="/pc/js/jquery/jquery-2.1.4.min.js"></script>
+	<script src="/pc/js/jquery/jquery-ui.min.js"></script>
+	<script src="/pc/js/swiper.min.js"></script> <!-- 4.5.1 ver  -->
+	<script src="/pc/js/common/webfont.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.min.js"></script>
+	<![endif]-->
+	<title>K파트너즈 guide</title>
+	<style>
+		.wrap {
+			min-width: 0;
+		}
+		.guide-section .heading-depth01 {
+			margin-top: 0;
+		}
+		.guide-section:first-child {
+			margin-top: 0;
+		}
+		.guide-section {
+			margin: 50px 0;
+			padding: 50px 0;
+			border-top: 2px dashed #ccc;
+		}
+		.guide-icon:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		.guide-icon {
+			margin-top: 6px;
+		}
+		.guide-icon li:first-child {
+			margin-left: 0;
+		}
+		.guide-icon li:last-child {
+			margin-right: 0;
+		}
+		.guide-icon li {
+			float: left;
+			margin: 0 3px;
+			background-color: #fcc;
+		}
+		h2.guide-title {
+			margin-bottom: 30px;
+			font-size: 2.588rem;
+			position: relative;
+			padding-left: 15px;
+		}
+		h2.guide-title:before {
+			content:'';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -5px;
+			width: 8px;
+			height: 10px;
+			background-color: #222;
+		}
+		h2.guide-title + h3.guide-title {
+			margin-top: 0;
+		}
+		h3.guide-title {
+			margin: 50px 0 20px;
+			font-size: 1.882rem;
+		}
+		.guide-title + .row {
+			margin-top: 0;
+		}
+		.guide-text {
+			margin-bottom: 10px;
+		}
+		.guide-section .row .col {
+			border: 1px solid #ccc;
+			background-color: #fcc;
+		}
+		.header {
+			position: fixed;
+			padding: 10px 0;
+			background-color: #f0f0f0;
+			z-index: 2;
+		}
+		.guide-gnb ul {
+			overflow: hidden;
+			margin-top: 10px;
+		}
+		.guide-gnb li {
+			float: left;
+			padding: 0 10px;
+		}
+		.guide-gnb li:first-child {
+			padding-left: 0;
+		}
+	</style>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+		<a href="#content" class="skipToContent">본문으로 바로가기</a>
+		<!-- header -->
+		<header class="header" style="height: auto;">
+			<div class="inner">
+				<h1>K파트너즈 UI Guide</h1>
+				<div class="guide-gnb">
+					<ul>
+						<li><a href="#typography">typography</a></li>
+						<li><a href="#grid">grid</a></li>
+						<li><a href="#icon">icon</a></li>
+						<li><a href="#button">button</a></li>
+						<li><a href="#banner">banner</a></li>
+						<li><a href="#paging">paging</a></li>
+						<li><a href="#tab">tab</a></li>
+						<li><a href="#bullet">bullet</a></li>
+						<li><a href="#table">table</a></li>
+						<li><a href="#box">box</a></li>
+						<li><a href="#card">card</a></li>
+						<li><a href="#board">board</a></li>
+						<li><a href="#form">form</a></li>
+						<li><a href="#accordion">accordion</a></li>
+						<li><a href="#layerPop">layerPop</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+		<!-- container -->
+		<div class="container">
+			<!-- content -->
+			<main id="content" class="content">
+				<div class="inner">
+					<section class="guide-section" id="typography">
+						<h2 class="guide-title">typography</h2>
+						<div class="heading heading-depth01">
+							<h2 class="title">heading-depth01</h2>
+						</div>
+						<div class="heading heading-depth02">
+							<h2 class="title">heading-depth02</h2>
+							<span>아래 7개의 카테고리를 선택하여 URL이 보이면 <span class="color01">“K파트너스URL 생성”</span> 버튼을 눌러주세요.</span>
+						</div>
+						<div class="heading heading-depth03">
+							<h3 class="title">heading-depth03</h3>
+						</div>
+						<p class="text">body text 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.  <em class="mark">남산 위에 mark</em> 저 소나무, <em class="mark mark-color01">철갑  mark-color01</em>을 두른 듯 바람서리 불변함은 우리 기상일세. <em class="mark mark-color02">무궁화 mark-color02</em> 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세.</p>
+						<p class="text small">body text small동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세.</p>
+						<p class="tip">
+							<i class="icon icon-tip"></i>
+							기본 가운데 정렬입니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세
+						</p>
+						<p class="tip left">
+							<i class="icon icon-tip"></i>
+							왼쪽 정렬 .left 동해물과 <em class="mark mark-color02">무궁화 mark-color02</em>백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세
+						</p>
+						<h3 class="guide-title">label</h3>
+						<span class="label">label</span>
+						<span class="label label-bg01">label-bg01</span>
+					</section>
+					<section class="guide-section" id="grid">
+						<h2 class="guide-title">grid</h2>
+						<div class="row size03">
+							<div class="col">grid col03</div>
+							<div class="col">grid col03</div>
+							<div class="col">grid col03</div>
+						</div>
+						<div class="row size05">
+							<div class="col">grid</div>
+							<div class="col">grid</div>
+							<div class="col">grid</div>
+							<div class="col">grid</div>
+							<div class="col">grid</div>
+						</div>
+					</section>
+					<section class="guide-section" id="icon">
+						<h2 class="guide-title">icon</h2>
+						<i class="icon icon-tip"></i>
+						<i class="icon icon-share-kakao">카카오톡 공유하기</i>
+						<i class="icon icon-data"></i>
+						<i class="icon icon-detail01"></i>
+						<i class="icon icon-detail02"></i>
+						<i class="icon icon-file"></i>
+						<i class="icon icon-down"></i>
+						<i class="icon icon-del">삭제</i>
+						<i class="icon icon-link"></i>
+						<i class="icon icon-arrow"></i>
+						<i class="icon icon-search" style="background-color:pink"></i>
+						<i class="icon icon-alert"></i>
+						<i class="icon icon-sorting"></i>
+					</section>
+					<section class="guide-section" id="button">
+						<h2 class="guide-title">button</h2>
+						<h3 class="guide-title">button defulat</h3>
+						<button type="button" class="button">defulat</button>
+						<button type="button" class="button" disabled="disabled">disabled</button>
+						<h3 class="guide-title">button-size</h3>
+						<a href="#" class="button" role="button">a</a>
+						<button type="button" class="button button-sizeS">button-sizeS</button>
+						<button type="button" class="button button-sizeM">button-sizeM</button>
+						<button type="button" class="button button-fix">button-fix 140</button>
+						<!-- <button type="button" class="button button-sizeL">button-sizeL</button> -->
+						<hr>
+						<h3 class="guide-title">button-bg</h3>
+						<button type="button" class="button button-bg01">bg01</button>
+						<button type="button" class="button button-bg01 active">bg01 active</button>
+						<button type="button" class="button button-bg02">bg02</button>
+						<hr>
+						<h3 class="guide-title">button-wrap</h3>
+						<div class="button-wrap">
+							<button type="button" class="button button-sizeM">default center</button>
+						</div>
+						<div class="button-wrap">
+							<div class="left">
+								<button type="button" class="button button-sizeM">left</button>
+							</div>
+							<div class="right">
+								<button type="button" class="button button-sizeM">right</button>
+							</div>
+						</div>
+						<hr>
+						<h3 class="guide-title">button-alert</h3>
+						<button type="button" class="button button-sizeM button-alert">
+							button alert<span>복사되었습니다!</span>
+						</button>
+						<button type="button" class="button button-sizeM button-alert">
+							button alert2<span>alert2</span>
+						</button>
+						<button type="button" class="button-alert button-tooltip">
+							<i class="icon icon-alert">안내사항</i><span>확정되지 않은 예상 구매금액이며,<br>구매 취소시 변동될 수 있습니다</span>
+						</button>
+						<hr>
+						<a href="#" class="button-link">button-link <i class="icon icon-link"></i></a>
+						<a href="#" class="link-txt">link-txt</a>
+					</section>
+					<section class="guide-section">
+						<h2 class="guide-title">img wrap</h2>
+						<div class="img-wrap">
+							<img src="/pc/images/link/img_link05_01.jpg" alt="카테고리별 파트너스 메뉴화면 ">
+						</div>
+					</section>
+					<section class="guide-section" id="banner">
+						<h2 class="guide-title">banner</h2>
+						<div class="banner banner-bg01">
+							<strong>K파트너스 URL 링크생성</strong>
+							<p>각 상품별 링크생성을 통해 생성된 URL을 복사하여 사용하셔야 합니다.</p>
+						</div>
+						<div class="banner banner-bg02">
+							<strong>QR 코드생성</strong>
+							<p>QR코드 생성 버튼을 통해 생성된 QR코드를 다운로드 받아 사용하세요.</p>
+						</div>
+					</section>
+					<section class="guide-section" id="paging">
+						<h2 class="guide-title">paging</h2>
+						<!-- paging -->
+						<div class="paging">
+							<button type="button" class="button button-paging">더보기 <i class="icon icon-arrow"></i></button>
+						</div>
+						<!-- //paging -->
+					</section>
+					<section class="guide-section" id="tab">
+						<h2 class="guide-title">tab</h2>
+						<h3 class="guide-title">tab type</h3>
+						<ul class="tab tab-type01">
+							<li><a href="#"><span>tab type01</span></a></li>
+							<li><a href="#"><span>tab type01</span></a></li>
+							<li><a href="#"><span>tab type01</span></a></li>
+							<li class="active"><a href="#"><span>tab type01</span></a></li>
+							<li><a href="#"><span>tab type01</span></a></li>
+						</ul>
+						<hr>
+						<ul class="tab tab-type02">
+							<li><a href="#"><span>tab type02</span></a></li>
+							<li class="active"><a href="#"><span>tab type02</span></a></li>
+							<li><a href="#"><span>tab type02</span></a></li>
+							<li><a href="#"><span>tab type02</span></a></li>
+							<li><a href="#"><span>tab type02</span></a></li>
+						</ul>
+						<hr>
+						<h3 class="guide-title">tab size (fix)</h3>
+						<ul class="tab tab-type02 tab-size03">
+							<li><a href="#"><span>tab-size03</span></a></li>
+							<li><a href="#"><span>tab-size03</span></a></li>
+							<li><a href="#"><span>tab-size03</span></a></li>
+							<li class="active"><a href="#"><span>tab-size03</span></a></li>
+							<li><a href="#"><span>tab-size03</span></a></li>
+						</ul>
+						<hr>
+						<h3 class="guide-title">tab content</h3>
+						<!-- tab-wrap -->
+						<div class="tab-wrap">
+							<!-- tab -->
+							<ul class="tab tab-type02">
+								<li class="active"><a href="#tab-con01"><span>tab type02</span></a></li>
+								<li><a href="#tab-con02"><span>tab type02</span></a></li>
+								<li><a href="#tab-con03"><span>tab type02</span></a></li>
+							</ul>
+							<!-- //tab -->
+							<!-- tab-container -->
+							<div class="tab-container">
+								<div class="tab-content" id="tab-con01">tab Content1 tab Content1</div>
+								<div class="tab-content" id="tab-con02">tab Content2 tab Content2</div>
+								<div class="tab-content" id="tab-con03">tab Content3 tab Content3</div>
+							</div>
+							<!-- //tab-container -->
+						</div>
+						<!-- //tab-wrap -->
+					</section>
+					<section class="guide-section" id="bullet">
+						<h2 class="guide-title">bullet</h2>
+						<h3 class="guide-title">bullet-type01</h3>
+						<ul class="bullet bullet-type01">
+							<li><span>1.</span>bullet type01</li>
+							<li><span>2.</span>bullet type01</li>
+						</ul>
+						<!-- <h3 class="guide-title">bullet-type02</h3>
+						<ul class="bullet bullet-type02">
+							<li>bullet type02</li>
+							<li>bullet type02</li>
+						</ul> -->
+					</section>
+					<section class="guide-section" id="table">
+						<h2 class="guide-title">table</h2>
+						<div class="table table-type01">
+							<table>
+								<caption>table (th, th, th, th)</caption>
+								<colgroup>
+									<col style="width: 16%;">
+									<col style="width: 16%;">
+									<col style="width: 16%;">
+									<col style="width: 16%;">
+									<col style="width: 16%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">th</th>
+										<th scope="col"><button type="button" class="btn-sorting">th <i class="icon icon-sorting"></i></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">th <i class="icon icon-sorting"></i></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">th <i class="icon icon-sorting"></i></button></th>
+										<th scope="col">th</th>
+										<th scope="col">th</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a href="#">0000-00-00</a></td>
+										<td><p class="bd-es">한줄 말줄임 한줄 말줄임 한줄 말줄임 한줄 말줄임 </p></td>
+										<td>td</td>
+										<td>td</td>
+										<td>td</td>
+										<td>td</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="guide-title">scroll-y</h3>
+						<div class="table table-type01 scroll-y">
+							<table>
+								<caption>table (th, th, th, th)</caption>
+								<colgroup>
+									<col style="width: 16%;">
+									<col style="width: 16%;">
+									<col style="width: 16%;">
+									<col style="width: 16%;">
+									<col style="width: 16%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="tb-fixed">th</th>
+										<th scope="col"><button type="button" class="btn-sorting">th <i class="icon icon-sorting"></i></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">th <i class="icon icon-sorting"></i></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">th <i class="icon icon-sorting"></i></button></th>
+										<th scope="col">th</th>
+										<th scope="col">th</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tb-fixed"><a href="#">0000-00-00</a></td>
+										<td><p class="bd-es">한줄 말줄임 한줄 말줄임 한줄 말줄임 한줄 말줄임 </p></td>
+										<td>td</td>
+										<td>td</td>
+										<td>td</td>
+										<td>td</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="guide-title">table-type02</h3>
+						<div class="table table-type02">
+							<table>
+								<caption>table (th, th, th, th)</caption>
+								<colgroup>
+									<col style="width: 20%;">
+									<col style="width: 45%;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">th</th>
+										<td>td</td>
+										<td>td</td>
+									</tr>
+									<tr>
+										<th scope="row">th</th>
+										<td>td</td>
+										<td>td</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="guide-section" id="box">
+						<h2 class="guide-title">box</h2>
+						<!-- box -->
+						<div class="box">
+							<div class="form-share">
+								<input type="text" class="input" value="https://kmembers.kpartners/fsdesdf123" readonly="readonly" title="파트너스 URL">
+								<div class="button-group">
+									<button type="button" class="button button-icon"><i class="icon icon-share-kakao">카카오톡 공유하기</i></button>
+									<button type="button" class="button button-sizeM button-alert">
+										K파트너스 URL 복사<span>복사되었습니다!</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- //box -->
+						<p class="tip">
+							<i class="icon icon-tip"></i>
+							교원 K파트너스 링크를 본인의 채널에 게시할 경우 반드시 교원 K파트너스 활동을 통해 일정액의 수익금을 받을 수 있다는 문구가 게재되어야 합니다.
+						</p>
+						<h3 class="guide-title">box-type01</h3>
+						<!-- box -->
+						<div class="box box-type01">라운드형 box-type01</div>
+						<!-- //box -->
+						<hr>
+						<h3 class="guide-title">리포트</h3>
+						<div class="term">
+							조회기간 : <span>2021-04-29 ~ 2021-06-29</span><button type="button" class="button button-sizeM" onclick="obj.layerOpen('layer01', 540)">기간설정</button>
+							<p class="update">최근 업데이트일 : 2021-04-29</p>
+						</div>
+						<div class="box result-box">
+							<div class="row-wrap">
+								<div class="col">
+									<dl>
+										<dt>클릭수</dt>
+										<dd><strong>70</strong></dd>
+									</dl>
+								</div>
+								<div class="col">
+									<dl>
+										<dt>구매건수</dt>
+										<dd><strong>70</strong></dd>
+									</dl>
+								</div>
+								<div class="col">
+									<dl>
+										<dt>구매금액</dt>
+										<dd><strong class="color01">123,000</strong>원</dd>
+									</dl>
+								</div>
+								<div class="col">
+									<dl>
+										<dt>
+											클릭수
+											<button type="button" class="button-alert button-tooltip">
+												<i class="icon icon-alert">안내사항</i>
+												<span>확정되지 않은 예상 구매금액이며,<br>구매 취소시 변동될 수 있습니다</span>
+											</button>
+										</dt>
+										<dd><strong>000</strong></dd>
+									</dl>
+								</div>
+								<div class="col">
+									<dl>
+										<dt>전환율</dt>
+										<dd><strong class="color05">17.2%</strong></dd>
+									</dl>
+								</div>
+								<div class="col">
+									<dl>
+										<dt>구매건수</dt>
+										<dd><strong>70</strong></dd>
+									</dl>
+								</div>
+								<div class="col">
+									<dl>
+										<dt>구매금액</dt>
+										<dd><strong class="color01">123,000</strong>원</dd>
+									</dl>
+								</div>
+								<div class="col">
+									<dl>
+										<dt>
+											클릭수
+											<button type="button" class="button-alert button-tooltip">
+												<i class="icon icon-alert">안내사항</i>
+												<span>확정되지 않은 예상 구매금액이며,<br>구매 취소시 변동될 수 있습니다</span>
+											</button>
+										</dt>
+										<dd><strong>000</strong></dd>
+									</dl>
+								</div>
+								<div class="col">
+									<dl>
+										<dt>전환율</dt>
+										<dd><strong class="color05">17.2%</strong></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="account">
+							<p class="total">미지급 잔액: <strong>12,000</strong>원</p>
+							<div class="num">
+								<div>
+									<strong>정산지급 계좌번호 :</strong> <span>국민은행 1234-56-7890</span>
+								</div>
+								<div>
+									<a href="#" class="button button-bg02 button-alert button-alert02">
+										계좌번호 변경하기
+										<span>매월 16일부터 말일까지는 <br>계좌번호 변경이 불가능합니다.</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="account">
+							<p class="total">미지급 잔액: <strong>0</strong>원</p>
+							<div class="num">
+								<div>
+									<strong>정산지급 계좌번호 :</strong> <span class="color01">계좌번호를 등록해주세요.</span>
+									<p class="tip left"><i class="icon icon-tip"></i>계좌번호 미등록시 지급정산이 되지 않습니다.</p>
+								</div>
+								<div>
+									<a href="#" class="button button-bg02">계좌번호 등록하기</a>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<p>
+								<strong>실적일이 포함된 익익월 OO일에 업데이트 됩니다.</strong>
+								<span>ex) 1월1일~1월 말일까지의 실적은 3월 OO일에 업데이트 됩니다.</span>
+							</p>
+						</div>
+					</section>
+					<section class="guide-section" id="card">
+						<h2 class="guide-title">card</h2>
+						<!-- card -->
+						<div class="card">
+							<div class="card-cont">
+								<p class="tip">
+									<i class="icon icon-tip"></i>
+									교원 K파트너스 활동을 위해 궁금하실 만하거나 자주 묻는 질문을 알려드립니다.
+								</p>
+								<p class="tip">
+									<i class="icon icon-tip"></i>
+									아래 내용 외에 더 자세한 상담이 필요하시면 고객센터 또는 <a href="#" class="link-txt">1:1 문의하기</a>를 이용하시기 바랍니다.
+								</p>
+							</div>
+						</div>
+						<!-- //card -->
+						<h3 class="guide-title">card js</h3>
+						<!-- card -->
+						<div class="card card-js">
+							<div class="card-top">
+								<a href="#" role="button"><span>전체보기</span> <i class="icon icon-arrow-ani"></i></a>
+							</div>
+							<div class="card-cont">
+								<ul class="bullet bullet-type01">
+									<li><span>1.</span>등록된 채널 또는 웹사이트외 광고 활동을 하게 되면 부정행위로 간주될 수 있습니다.<br>
+									등록된 채널 또는 웹사이트에서만 광고활동을 해주시기 바랍니다.</li>
+									<li><span>2.</span>등록된 채널 또는 웹사이트라 하더라도 공연음란 또는 불건전한 채널, 웹사이트의 경우 K파트너스 활동이 영구 제한될 수 있습니다. </li>
+									<li><span>3.</span>반드시 본인 소유의 채널 또는 웹사이트 (실제 직접 본인이 운영, 임대 및 공유 채널 및 사이트 불가)등록을 원칙으로 합니다.</li>
+									<li><span>4.</span>교원 K파트너스 링크를 본인의 채널에 게시할 경우 반드시 교원 K파트너스 활동을 통해 일정액의 수익금을 받을 수 있다는 문구가 게재되어야 합니다.</li>
+									<li><span>5.</span>부정한 방법을 사용하여 광고를 노출시키거나 클릭을 반복하여 회사에 피해를 주는 행위에 대해 회사는 이용제한 / 탈퇴 등의 조치를 취할 수 있습니다.</li>
+									<li><span>6.</span>수익금 정산을 위해서는 마이페이지내 정산정보관리 화면에서 본인인증 및 계좌인증을 하셔야 합니다.</li>
+								</ul>
+								<p class="text small">위의 유의사항에 언급되지 않은 사항은 이용약관과 운영정책에 따라 처리합니다.</p>
+							</div>
+						</div>
+						<!-- //card -->
+					</section>
+					<section class="guide-section" id="board">
+						<h2 class="guide-title">board</h2>
+						<h3 class="guide-title">board-caption</h3>
+						<!-- board-caption -->
+						<div class="board-caption">
+							<ul class="sorting">
+								<li class="active"><a href="#">고객클릭순</a></li>
+								<li><a href="#">낮은가격순</a></li>
+								<li><a href="#">높은가격순</a></li>
+								<li><a href="#">높은 수익금순</a></li>
+								<li><a href="#">최신등록순</a></li>
+							</ul>
+							<div class="form">
+								<span class="select">
+									<select title="구분">
+										<option value="">전체</option>
+										<option value="">웰스</option>
+										<option value="">에듀</option>
+										<option value="">구몬</option>
+										<option value="">라이프</option>
+										<option value="">여행</option>
+										<option value="">호텔</option>
+									</select>
+								</span>
+							</div>
+						</div>
+						<!-- //board-caption -->
+						<!-- board-caption -->
+						<div class="board-caption">
+							<div class="form">
+								<span class="select">
+									<select title="구분">
+										<option value="">기간전체</option>
+										<option value="">3개월</option>
+										<option value="">6개월</option>
+										<option value="">1년</option>
+									</select>
+								</span>
+								<span class="select">
+									<select title="구분">
+										<option value="">전체문의</option>
+										<option value="">문의접수</option>
+										<option value="">처리중</option>
+										<option value="">답변완료</option>
+									</select>
+								</span>
+							</div>
+						</div>
+						<!-- //board-caption -->
+						<h3 class="guide-title">board-search</h3>
+						<!-- board-search -->
+						<div class="board-search">
+							<div class="search-inner">
+								<input type="text" title="검색어" placeholder="검색어를 입력해주세요.">
+								<button type="button"><i class="icon icon-search"></i>검색</button>
+							</div>
+						</div>
+						<!-- //board-search -->
+						<!-- result-txt -->
+						<p class="result-txt">
+							<strong class="color01">'도요새'</strong>로 검색한 결과를 링크 생성하여 공유할 수 있습니다.
+							<button type="button" class="button button-sizeM">링크생성</button>
+						</p>
+						<!-- //result-txt -->
+						<!-- //board-caption -->
+						<h3 class="guide-title">board-type01</h3>
+						<div class="no-data">
+							<p>
+								<i class="icon icon-data"></i>
+								검색결과가 없습니다.
+							</p>
+						</div>
+						<!-- board-type01 -->
+						<ul class="board board-type01">
+							<li>
+								<!-- thumb-area -->
+								<div class="thumb-area dim">
+									<div class="thumb">
+										<img src="https://dummyimage.com/210x210/ffc0cb/fff" alt="">
+									</div>
+									<div class="detail">
+										<p>추천 수익금 적용 상품</p>
+										<div class="button-group">
+											<a href="#" class="button button-icon"><i class="icon icon-detail01"></i>상품정보</a>
+											<a href="#" class="button button-icon"><i class="icon icon-detail02"></i>링크생성</a>
+										</div>
+									</div>
+								</div>
+								<!-- //thumb-area -->
+								<!-- cont-area -->
+								<div class="cont-area">
+									<strong>제목영역 1줄 말줄임</strong>
+									<span>서브카피 2줄 말줄임</span>
+									<dl>
+										<dt>가격</dt>
+										<dd><strong>89,000원</strong></dd>
+									</dl>
+									<dl>
+										<dt>수수료</dt>
+										<dd><strong class="color01">2,000원 지급</strong></dd>
+									</dl>
+								</div>
+								<!-- //cont-area -->
+							</li>
+							<li>
+								<!-- thumb-area -->
+								<div class="thumb-area dim">
+									<div class="thumb">
+										<img src="https://dummyimage.com/210x210/ffc0cb/fff" alt="">
+									</div>
+									<div class="detail">
+										<p>추천 수익금 적용 상품</p>
+										<div class="button-group">
+											<a href="#" class="button button-icon"><i class="icon icon-detail01"></i>상품정보</a>
+											<a href="#" class="button button-icon"><i class="icon icon-detail02"></i>링크생성</a>
+										</div>
+									</div>
+								</div>
+								<!-- //thumb-area -->
+								<!-- cont-area -->
+								<div class="cont-area">
+									<strong>제목영역 1줄 말줄임 제목영역 1줄 말줄임 제목영역 1줄 말줄임 제목영역 1줄 말줄임</strong>
+									<span>서브카피 2줄 말줄임 서브카피 2줄 말줄임 서브카피 2줄 말줄임 서브카피 2줄 말줄임서브카피 2줄 말줄임</span>
+									<dl>
+										<dt>가격</dt>
+										<dd><strong>89,000원</strong></dd>
+									</dl>
+									<dl>
+										<dt>수수료</dt>
+										<dd><strong class="color01">2,000원 지급</strong></dd>
+									</dl>
+								</div>
+								<!-- //cont-area -->
+							</li>
+							<li>
+								<!-- thumb-area -->
+								<div class="thumb-area dim">
+									<div class="thumb">
+										<img src="https://dummyimage.com/210x210/ffc0cb/fff" alt="">
+									</div>
+									<div class="detail">
+										<p>추천 수익금 적용 상품</p>
+										<div class="button-group">
+											<a href="#" class="button button-icon"><i class="icon icon-detail01"></i>상품정보</a>
+											<a href="#" class="button button-icon"><i class="icon icon-detail02"></i>링크생성</a>
+										</div>
+									</div>
+								</div>
+								<!-- //thumb-area -->
+								<!-- cont-area -->
+								<div class="cont-area">
+									<strong>제목영역 1줄 말줄임</strong>
+									<span>서브카피 2줄 말줄임</span>
+									<dl>
+										<dt>가격</dt>
+										<dd><strong>89,000원</strong></dd>
+									</dl>
+									<dl>
+										<dt>수수료</dt>
+										<dd><strong class="color01">2,000원 지급</strong></dd>
+									</dl>
+								</div>
+								<!-- //cont-area -->
+							</li>
+							<li>
+								<!-- thumb-area -->
+								<div class="thumb-area dim">
+									<div class="thumb">
+										<img src="https://dummyimage.com/210x210/ffc0cb/fff" alt="">
+									</div>
+									<div class="detail">
+										<p>추천 수익금 적용 상품</p>
+										<div class="button-group">
+											<a href="#" class="button button-icon"><i class="icon icon-detail01"></i>상품정보</a>
+											<a href="#" class="button button-icon"><i class="icon icon-detail02"></i>링크생성</a>
+										</div>
+									</div>
+								</div>
+								<!-- //thumb-area -->
+								<!-- cont-area -->
+								<div class="cont-area">
+									<strong>제목영역 1줄 말줄임</strong>
+									<span>서브카피 2줄 말줄임</span>
+									<dl>
+										<dt>가격</dt>
+										<dd><strong>89,000원</strong></dd>
+									</dl>
+									<dl>
+										<dt>수수료</dt>
+										<dd><strong class="color01">2,000원 지급</strong></dd>
+									</dl>
+								</div>
+								<!-- //cont-area -->
+							</li>
+							<li>
+								<a hefr="#">
+									<!-- thumb-area -->
+									<div class="thumb-area">
+										<div class="thumb">
+											<img src="https://dummyimage.com/210x210/ffc0cb/fff" alt="">
+										</div>
+									</div>
+									<!-- //thumb-area -->
+									<!-- cont-area -->
+									<div class="cont-area">
+										<strong>제목영역 1줄 말줄임 제목영역 1줄 말줄임제목영역 1줄 말줄임제목영역 1줄 말줄임제목영역 1줄 말줄임</strong>
+										<span>서브카피 2줄 말줄임서브카피 2줄 말줄임서브카피 2줄 말줄임서브카피 2줄 말줄임</span>
+										<dl>
+											<dt><span class="label">기간</span></dt>
+											<dd>2020.3.30 ~ 0000.0.00</dd>
+										</dl>
+									</div>
+									<!-- //cont-area -->
+								</a>
+							</li>
+							<li class="list-off"><!-- 이벤트 종료시 'list-off' 클래스 추가  -->
+								<!-- thumb-area -->
+								<div class="thumb-area">
+									<div class="thumb">
+										<img src="https://dummyimage.com/210x210/ffc0cb/fff" alt="">
+									</div>
+								</div>
+								<!-- //thumb-area -->
+								<!-- cont-area -->
+								<div class="cont-area">
+									<strong>제목영역 1줄 말줄임 제목영역 1줄 말줄임제목영역 1줄 말줄임제목영역 1줄 말줄임제목영역 1줄 말줄임</strong>
+									<span>서브카피 2줄 말줄임서브카피 2줄 말줄임서브카피 2줄 말줄임서브카피 2줄 말줄임</span>
+									<dl>
+										<dt><span class="label">종료</span></dt>
+										<dd>2020.3.30 ~ 0000.0.00</dd>
+									</dl>
+								</div>
+								<!-- //cont-area -->
+							</li>
+						</ul>
+						<!-- //board-type01 -->
+						<!-- paging -->
+						<div class="paging">
+							<button type="button" class="button button-paging">더보기 <i class="icon icon-arrow"></i></button>
+						</div>
+						<!-- //paging -->
+						<h3 class="guide-title">board-type02</h3>
+						<!-- board-type02 -->
+						<div class="board board-type02">
+							<div class="board-row board-title">
+								<div class="item">번호</div>
+								<div class="item">제목</div>
+								<div class="item">등록일</div>
+							</div>
+							<div class="board-row no-data">
+								<p>
+									<i class="icon icon-data"></i>
+									검색결과가 없습니다.
+								</p>
+							</div>
+							<a href="#" class="board-row">
+								<div class="item num"><span class="label label-bg01">공지</span></div>
+								<div class="item align-L">
+									<p>제목영역 제목영역 제목영역제목영역 제목영역 제목영역제목영역 제목영역 제목영역제목영역 제목영역 제목영역제목영역 제목영역 제목영역</p>
+								</div>
+								<div class="item date">0000-00-00</div>
+							</a>
+							<a href="#" class="board-row">
+								<div class="item num"><span class="label">이벤트</span></div>
+								<div class="item align-L">
+									<p>제목영역</p>
+								</div>
+								<div class="item date">0000-00-00</div>
+							</a>
+							<a href="#" class="board-row">
+								<div class="item num">2</div>
+								<div class="item align-L">
+									<p>제목영역</p>
+								</div>
+								<div class="item date">0000-00-00</div>
+							</a>
+							<a href="#" class="board-row">
+								<div class="item num">1</div>
+								<div class="item align-L">
+									<p>제목영역제목영역제목영역제목영역제목영역제목영역제목영역제목영역제목영역제목영역제목영역제목영역제목영역제목영역</p>
+								</div>
+								<div class="item date">0000-00-00</div>
+							</a>
+						</div>
+						<!-- //board-type02 -->
+						<h3 class="guide-title">board-type03</h3>
+						<!-- board-type03 -->
+						<div class="board board-type03">
+							<div class="board-group">
+								<strong>웰스</strong>
+								<div class="item-wrap">
+									<div class="item">
+										<dl>
+											<dt>날짜</dt>
+											<dd>0000.00.00</dd>
+										</dl>
+									</div>
+									<div class="item">
+										<dl>
+											<dt>상품명</dt>
+											<dd><p class="es">상품명 한줄 노출됩니다 한줄 한줄 한줄상품명 한줄 노출됩니다 한줄 한줄 한줄</p></dd>
+										</dl>
+									</div>
+									<div class="item">
+										<dl>
+											<dt>구매금액</dt>
+											<dd>0000원</dd>
+										</dl>
+									</div>
+									<div class="item">
+										<dl>
+											<dt>취소금액</dt>
+											<dd>0000원</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div class="board-group">
+								<strong>구몬</strong>
+								<div class="item-wrap">
+									<div class="item">
+										<dl>
+											<dt>날짜</dt>
+											<dd>0000.00.00</dd>
+										</dl>
+									</div>
+									<div class="item">
+										<dl>
+											<dt>상품명</dt>
+											<dd><p class="es">상품명 한줄 노출됩니다 한줄 한줄 한줄상품명 한줄 노출됩니다 한줄 한줄 한줄</p></dd>
+										</dl>
+									</div>
+									<div class="item">
+										<dl>
+											<dt>구매금액</dt>
+											<dd>0000원</dd>
+										</dl>
+									</div>
+									<div class="item">
+										<dl>
+											<dt>취소금액</dt>
+											<dd>0000원</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //board-type03 -->
+						<h3 class="guide-title">board view</h3>
+						<!-- board-view -->
+						<div class="board board-view">
+							<!-- board-head -->
+							<div class="board-head">
+								<div class="view-row">
+									<div class="col-2">
+										<div class="item title">제목</div>
+										<div class="item">제목 노출</div>
+									</div>
+									<div class="col-2">
+										<div class="item title">등록일</div>
+										<div class="item">0000.00.00</div>
+									</div>
+								</div>
+								<div class="view-row">
+									<div class="item title">이벤트 기간</div>
+									<div class="item">0000.00.00 ~ 0000.00.00</div>
+								</div>
+								<div class="view-row">
+									<div class="item title">제목</div>
+									<div class="item"><span class="label">공지</span><em class="num">999</em>공지사항 제목 노출 공지사항 제목 노출공지사항 제목 노출공지사항 제목 노출공지사항</div>
+								</div>
+								<div class="view-row">
+									<div class="item title">등록일</div>
+									<div class="item fontRo">0000.00.00</div>
+								</div>
+								<div class="view-row">
+									<div class="item title">첨부파일</div>
+									<div class="item">
+										<a href="#" class="button-down-txt" role="button" title="다운받기">
+											<i class="icon icon-file"></i>
+											<span>에듀파트너 카달로그1.jpg (3.2MB)</span>
+										</a>
+										<a href="#" class="button button-sizeM" role="button" title="다운받기">
+											<i class="icon icon-down"></i>
+											다운받기
+										</a>
+									</div>
+								</div>
+								<div class="view-row">
+									<div class="item title">링크복사</div>
+									<div class="item">
+										<span class="link">https://www.youtube.com/watch?v=iqDw3Xs2FyI</span>
+										<button type="button" class="button button-sizeM button-alert">
+											<i class="icon icon-file"></i>
+											링크복사<span>복사되었습니다!</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- //board-head -->
+							<!-- board-body -->
+							<div class="board-body edit">
+								<!-- <img src="https://dummyimage.com/380x400/ffc0cb/fff" alt=""> -->
+								<div class="iframe-wrap">
+									<iframe src="https://www.youtube.com/embed/alt2w0-wms8" frameborder="0" allowfullscreen ></iframe>
+								</div>
+								<p>게시판 상세 내용</p>
+							</div>
+							<!-- //board-body -->
+							<!-- board-pagi -->
+							<div class="board-pagi">
+								<div class="item">
+									<em>이전글</em>
+									<span>이전글이 없습니다.</span>
+								</div>
+								<div class="item">
+									<em>다음글</em>
+									<a href="/">다음 게시글의 제목</a>
+								</div>
+							</div>
+							<!-- //board-pagi -->
+						</div>
+						<!-- //board-view -->
+						<!-- button-wrap -->
+						<div class="button-wrap">
+							<button type="button" class="button button-bg01">목록</button>
+						</div>
+						<!-- //button-wrap -->
+						<!-- //board-view -->
+						<h3 class="guide-title">board write</h3>
+						<div class="board board-write">
+							<div class="board-row">
+								<strong class="board-name">이름</strong>
+								<div class="item">
+									<input type="text" class="input" value="이름" disabled="diasbled">
+								</div>
+							</div>
+							<div class="board-row">
+								<strong class="board-name">주민번호</strong>
+								<div class="item form-code">
+									<input type="text" class="input" title="주민번호 앞자리">
+									<span class="space">-</span>
+									<input type="text" class="input" title="주민번호 뒷자리">
+									<button type="button" class="button button-bg01">인증</button>
+								</div>
+								<p class="alert">이름과 주민등록번호가 일치하지 않습니다.</p>
+								<p class="tip left"><i class="icon icon-tip"></i>소득세법 제 145조에 따라 대금정산을 위한 주민등록번호 수집을 이용하며, 5년 동안 보관합니다.</p>
+							</div>
+							<div class="board-row">
+								<strong class="board-name"><span class="color01">*</span>이메일 주소</strong>
+								<div class="item form-email">
+									<input type="text" class="input" title="이메일 아이디">
+									<span class="space">@</span>
+									<span class="select select-domail select-sizeM">
+										<select>
+											<option value="">선택하세요.</option>
+											<option value="naver.com">naver.com</option>
+											<option value="daum.net">daum.net</option>
+											<option value="gmail.com">gmail.com</option>
+											<option value="nate.com">nate.com</option>
+											<option value="kyowon.co.kr">kyowon.co.kr</option>
+											<option value="직접입력">직접입력</option>
+										</select>
+									</span>
+									<input type="text" class="input input-domain" title="이메일 도메인" disabled="disabled">
+								</div>
+								<p class="tip left"><i class="icon icon-tip"></i>비회원의 경우 이메일 회신만 가능하오니 정확한 이메일 주소를 남겨주시기 바랍니다.</p>
+							</div>
+							<div class="board-row">
+								<strong class="board-name">전화번호</strong>
+								<div class="item">
+									<input type="text" class="input" title="전화번호" placeholder="‘-’를 제외한 번호만 입력해주세요.">
+								</div>
+							</div>
+							<div class="board-row">
+								<strong class="board-name">은행</strong>
+								<div class="item">
+									<span class="select">
+										<select>
+											<option value="">은행을 선택해 주세요</option>
+											<option value="">option2</option>
+											<option value="">option3</option>
+											<option value="">option4</option>
+										</select>
+									</span>
+								</div>
+							</div>
+							<div class="board-row">
+								<strong class="board-name">계좌번호</strong>
+								<div class="item form-set">
+									<input type="text" class="input" title="주소" placeholder="‘-’를 제외한 번호만 입력해주세요">
+									<button type="button" class="button">인증</button>
+								</div>
+								<p class="alert">인증버튼을 눌러 계좌번호를 인증해주세요.</p>
+							</div>
+							<div class="board-row">
+								<strong class="board-name">예금주</strong>
+								<div class="item">
+									<input type="text" class="input" value="김교원" readonly ="readonly">
+								</div>
+							</div>
+							<div class="board-row board-row-full">
+								<ul class="check-list">
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<i></i>
+											<span>웹사이트 및 개인 채널을 더 이상 운영하지 않습니다.</span>
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<i></i>
+											<span>광고대비 수익이 만족스럽지 않습니다.</span>
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+											<input type="checkbox" class="check-inp">
+											<i></i>
+											<span>기타 (선택 후 ,아래 사유를 입력해 주세요)</span>
+										</label>
+									</li>
+								</ul>
+								<div class="item">
+									<textarea class="textarea check-tg" disabled="disabled"></textarea>
+								</div>
+							</div>
+							<div class="board-row board-row-full">
+								<div class="item form-share">
+									<input type="text" class="input" value="https://kmembers.kpartners/fsdesdf123" readonly="readonly">
+									<div class="button-group">
+										<button type="button" class="button button-icon"><i class="icon icon-share-kakao">카카오톡 공유하기</i></button>
+										<button type="button" class="button button-sizeM button-alert">
+											K파트너스 URL 복사<span>복사되었습니다!</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="guide-title">문의하기 (board write)</h3>
+						<div class="box box-type01">
+							<p class="text small color01">* 필수 입력 입니다.</p>
+							<div class="board board-write">
+								<div class="board-row">
+									<strong class="board-name"><span class="color01">*</span>유형</strong>
+									<div class="item">
+										<span class="select select-sizeM">
+											<select>
+												<option value="">선택하세요.</option>
+												<option value="">서비스 </option>
+												<option value="">회원가입/로그인 </option>
+												<option value="">링크생성</option>
+												<option value="">수익발생</option>
+												<option value="">정산/지급</option>
+												<option value="">탈퇴/이용제한</option>
+												<option value="">기타</option>
+											</select>
+										</span>
+									</div>
+								</div>
+								<div class="board-row">
+									<strong class="board-name"><span class="color01">*</span>제목</strong>
+									<div class="item form-byte">
+										<input type="text" class="input">
+										<span class="byte"><em class="alert">0</em> / 40</span>
+										<!-- <span class="byte"><em class="success">50</em> / 40</span> -->
+									</div>
+								</div>
+								<div class="board-row">
+									<strong class="board-name"><span class="color01">*</span>이메일 주소</strong>
+									<div class="item form-email">
+										<input type="text" class="input" title="이메일 아이디">
+										<span class="space">@</span>
+										<span class="select select-domail select-sizeM">
+											<select>
+												<option value="">선택하세요.</option>
+												<option value="naver.com">naver.com</option>
+												<option value="daum.net">daum.net</option>
+												<option value="gmail.com">gmail.com</option>
+												<option value="nate.com">nate.com</option>
+												<option value="kyowon.co.kr">kyowon.co.kr</option>
+												<option value="직접입력">직접입력</option>
+											</select>
+										</span>
+										<input type="text" class="input input-domain" title="이메일 도메인" disabled="disabled">
+									</div>
+									<p class="tip left"><i class="icon icon-tip"></i>비회원의 경우 이메일 회신만 가능하오니 정확한 이메일 주소를 남겨주시기 바랍니다.</p>
+								</div>
+								<div class="board-row">
+									<strong class="board-name"><span class="color01">*</span>내용</strong>
+									<div class="item">
+										<textarea class="textarea textarea-sizeL"  title="내용"></textarea>
+										<span class="byte"><em class="success">50</em> / 1000</span>
+										<!-- <span class="byte"><em class="alert">40</em> / 1000</span> -->
+									</div>
+								</div>
+								<div class="board-row">
+									<strong class="board-name">파일첨부</strong>
+									<div class="item">
+										<div class="file-box">
+										  <input class="upload-name" value="" disabled="disabled">
+										  <label for="ex_filename" class="button button-bg01">찾아보기</label>
+										  <input type="file" id="ex_filename" class="upload-hidden">
+										  <!-- <input type="file" id="ex_filename" class="upload-hidden" accept="jpg,.jpeg,.png,.bmp"> -->
+										</div>
+									</div>
+									<p class="tip left"><i class="icon icon-tip"></i>이미지 파일만 첨부 가능합니다. ( 5Mbyte 제한 ) jpg , jpeg, bmp, png 파일만 가능</p>
+								</div>
+							</div>
+						</div>
+						<h3 class="guide-title">마이페이지 (board write)</h3>
+						<!-- <div class="mypageCont" style="width: 580px;"> -->
+						<div class="mypageCont">
+							<!-- box -->
+							<div class="box">
+								<!-- card -->
+								<div class="card card-js">
+									<div class="card-top">
+										<a href="#" role="button">유의사항 <span>전체보기</span> <i class="icon icon-arrow-ani"></i></a>
+									</div>
+									<div class="card-cont">
+										<p class="text small">
+											교원 K파트너스 회원으로 활동하기 위하여 아래 기본 유의사항을 반드시 확인 하여
+											주셔야 합니다.
+										</p>
+										<ul class="bullet bullet-type01">
+											<li><span>1.</span>등록된 채널 또는 웹사이트외 광고 활동을 하게 되면 부정행위로 간주될 수 있습니다.<br>
+											등록된 채널 또는 웹사이트에서만 광고활동을 해주시기 바랍니다.</li>
+											<li><span>2.</span>등록된 채널 또는 웹사이트라 하더라도 공연음란 또는 불건전한 채널, 웹사이트의 경우 K파트너스 활동이 영구 제한될 수 있습니다. </li>
+											<li><span>3.</span>반드시 본인 소유의 채널 또는 웹사이트 (실제 직접 본인이 운영, 임대 및 공유 채널 및 사이트 불가)등록을 원칙으로 합니다.</li>
+											<li><span>4.</span>교원 K파트너스 링크를 본인의 채널에 게시할 경우 반드시 교원 K파트너스 활동을 통해 일정액의 수익금을 받을 수 있다는 문구가 게재되어야 합니다.</li>
+											<li><span>5.</span>부정한 방법을 사용하여 광고를 노출시키거나 클릭을 반복하여 회사에 피해를 주는 행위에 대해 회사는 이용제한 / 탈퇴 등의 조치를 취할 수 있습니다.</li>
+											<li><span>6.</span>수익금 정산을 위해서는 마이페이지내 정산정보관리 화면에서 본인인증 및 계좌인증을 하셔야 합니다.</li>
+										</ul>
+										<p class="text small">위의 유의사항에 언급되지 않은 사항은 이용약관과 운영정책에 따라 처리합니다.</p>
+									</div>
+								</div>
+								<!-- //card -->
+								<div class="heading heading-depth03">
+									<h3 class="title">웹사이트 등록</h3><span>(선택)</span>
+								</div>
+								<div class="board board-write">
+									<div class="board-row board-row-full">
+										<div class="item form-set">
+											<input type="text" class="input" placeholder="https://" title="웹사이트 입력">
+											<button type="button" class="button button-bg01">추가</button>
+										</div>
+										<p class="tip left"><i class="icon icon-tip"></i>웹사이트는 최소1개 최대 10개까지 등록 가능합니다.</p>
+										<p class="alert">등록이 불가능한 형식의 사이트 주소입니다.다시 입력해 주세요.</p>
+										<ul class="add-area">
+											<li>
+												<label class="checkbox check-alert">
+													<input type="checkbox">
+													<i></i>
+													<span>본인소유</span>
+													<em>본인소유가 맞습니까?</em>
+												</label>
+												<span>https://kakao.salad.co.kr/sadfkweo123</span>
+												<button type="button" class="button button-icon"><i class="icon icon-del">삭제</i></button>
+											</li>
+											<li>
+												<label class="checkbox check-alert">
+													<input type="checkbox">
+													<i></i>
+													<span>본인소유</span>
+													<em>본인소유가 맞습니까?</em>
+												</label>
+												<span>https://kakao.salad.co.kr/testtesttesttest123</span>
+												<button type="button" class="button button-icon"><i class="icon icon-del">삭제</i></button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="heading heading-depth03">
+									<h3 class="title">등록한 웹사이트 및 채널을 설명해 주세요.</h3><span>(선택)</span>
+								</div>
+								<div class="board board-write">
+									<div class="board-row board-row-full">
+										<div class="item">
+											<textarea class="textarea" placeholder="반드시 K파트너스로 부터 일정 수수료를 받는다는 문구가&#13;&#10;게재되어야 합니다." title="웹사이트 설명" rows="3"></textarea>
+											<span class="byte"><em class="alert">40</em> / 1000</span>
+											<!-- <span class="byte"><em class="success">50</em> / 1000</span> -->
+										</div>
+									</div>
+								</div>
+								<div class="heading heading-depth03">
+									<h3 class="title">추천인 코드</h3>
+									<span>(선택)</span>
+									<em class="color01 small">교원 K파트너스 추천인의 파트너스코드를 입력해주세요.</em>
+								</div>
+								<div class="board board-write">
+									<div class="board-row board-row-full">
+										<div class="item form-set">
+											<input type="text" class="input" placeholder="예) KP0000000" title="추천인 파트너스코드">
+											<button type="button" class="button button-bg01">인증</button>
+											<!-- <button type="button" class="button button-bg01" disabled="disabled">인증</button> -->
+										</div>
+										<p class="tip left"><i class="icon icon-tip"></i>추천인 코드는 최초 등록 시 수정 및 변경이 불가능하므로 신중히 입력하여 주시기 바랍니다.</p>
+									</div>
+								</div>
+								<!-- card -->
+								<div class="card">
+									<div class="card-top">
+										<label class="checkbox">
+											<input type="checkbox" class="checkAll" data-group="group1">
+											<i></i>
+											<span>전체 동의 <em class="small color03">(필수)</em></span>
+										</label>
+									</div>
+									<div class="card-cont">
+										<ul class="check-list">
+											<li>
+												<label class="checkbox">
+													<input type="checkbox" data-group="group1" data-trigger="group1">
+													<i></i>
+													<span>교원 K파트너스 서비스 이용약관에 동의 합니다.</span>
+												</label>
+												<button type="button" class="button button-sizeS">내용보기</button>
+											</li>
+											<li>
+												<label class="checkbox">
+													<input type="checkbox" data-group="group1" data-trigger="group1">
+													<i></i>
+													<span>교원 K파트너스 운영 정책에 동의 합니다.</span>
+												</label>
+												<button type="button" class="button button-sizeS">내용보기</button>
+											</li>
+											<li>
+												<label class="checkbox">
+													<input type="checkbox" data-group="group1" data-trigger="group1">
+													<i></i>
+													<span>개인정보 수집 및 이용약관에 동의합니다.</span>
+												</label>
+												<button type="button" class="button button-sizeS">내용보기</button>
+											</li>
+											<li>
+												<label class="checkbox">
+													<input type="checkbox" data-group="group1" data-trigger="group1">
+													<i></i>
+													<span>회원가입 절차 및 회원가입 정보 수집에 동의 합니다.</span>
+												</label>
+												<button type="button" class="button button-sizeS">내용보기</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //card -->
+								<!-- button-wrap -->
+								<div class="button-wrap">
+									<button type="button" class="button">이전</button>
+									<button type="button" class="button button-bg02">다음</button>
+								</div>
+								<!-- //button-wrap -->
+							</div>
+							<!-- //box -->
+							<!-- box -->
+							<div class="box">
+								<div class="heading heading-depth03">
+									<h3 class="title"><em class="color01">*</em> 파트너 수익자 정보</h3>
+									<em class="color01 small">* 필수 입력입니다.</em>
+								</div>
+								<div class="board board-write">
+									<div class="board-row">
+										<strong class="board-name">이름</strong>
+										<div class="item">
+											<input type="text" class="input" value="김교원" disabled="diasbled">
+										</div>
+									</div>
+									<div class="board-row">
+										<strong class="board-name">주민번호</strong>
+										<div class="item form-code">
+											<input type="text" class="input" title="주민번호 앞자리">
+											<span class="space">-</span>
+											<input type="text" class="input" title="주민번호 뒷자리">
+											<button type="button" class="button button-bg01">인증</button>
+										</div>
+										<p class="alert">이름과 주민등록번호가 일치하지 않습니다.</p>
+										<p class="tip left"><i class="icon icon-tip"></i>소득세법 제 145조에 따라 대금정산을 위한 주민등록번호 수집을 이용하며, 5년 동안 보관합니다.</p>
+									</div>
+								</div>
+								<div class="heading heading-depth03">
+									<h3 class="title"><em class="color01">*</em> 연락처</h3>
+								</div>
+								<div class="board board-write">
+									<div class="board-row">
+										<strong class="board-name">전화번호</strong>
+										<div class="item">
+											<input type="text" class="input" title="전화번호" value="01000001233" disabled="disabled">
+										</div>
+									</div>
+									<div class="board-row">
+										<strong class="board-name">이메일</strong>
+										<div class="item">
+											<input type="text" class="input" title="이메일" value="abcde123@kyowon.co.kr" disabled="disabled">
+										</div>
+									</div>
+									<div class="myinfo-link">
+										<p class="tip left"><i class="icon icon-tip"></i>전화 번호 및 이메일 주소는 <span class="color01">'K멤버스 마이페이지’</span>에서 수정이 가능합니다.</p>
+										<a href="#" class="button-link">개인정보 수정하러 가기 <i class="icon icon-link"></i></a>
+									</div>
+								</div>
+								<div class="heading heading-depth03">
+									<h3 class="title"><em class="color01">*</em> 계좌 정보</h3>
+									<em class="color01 small">파트너 본인 명의의 은행계좌 정보를 입력해주세요.</em>
+								</div>
+								<div class="board board-write">
+									<div class="board-row">
+										<strong class="board-name">은행</strong>
+										<div class="item">
+											<span class="select">
+												<select>
+													<option value="">은행을 선택해 주세요</option>
+													<option value="">option2</option>
+													<option value="">option3</option>
+													<option value="">option4</option>
+												</select>
+											</span>
+										</div>
+										<p class="tip left"><i class="icon icon-tip"></i>간편(평생)계좌정보는 불가합니다.</p>
+									</div>
+									<div class="board-row">
+										<strong class="board-name">계좌번호</strong>
+										<div class="item form-set">
+											<input type="text" class="input" title="주소" placeholder="‘-’를 제외한 번호만 입력해주세요">
+											<button type="button" class="button button-bg01">인증</button>
+											<!-- <button type="button" class="button button-bg01" disabled="disabled">인증</button> -->
+										</div>
+										<p class="alert">인증버튼을 눌러 계좌번호를 인증해주세요.</p>
+									</div>
+									<div class="board-row">
+										<strong class="board-name">예금주</strong>
+										<div class="item">
+											<input type="text" class="input" value="김교원" disabled="disabled">
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-top">
+										<p class="text">교원 K파트너스 회원으로 활동이 어려우신가요?</p>
+										<a href="#" class="button-link">회원탈퇴 <i class="icon icon-link"></i></a>
+									</div>
+								</div>
+								<!-- button-wrap -->
+								<div class="button-wrap">
+									<button type="button" class="button button-bg02">저장</button>
+								</div>
+								<!-- //button-wrap -->
+							</div>
+							<!-- //box -->
+						</div>
+					</section>
+					<section class="guide-section" id="form">
+						<h2 class="guide-title">form El</h2>
+						<input type="text" class="input" title="제목" placeholder="제목을 입력해주세요.">
+						<input type="text" class="input" title="제목" value="readonly" readonly>
+						<input type="text" class="input" title="제목" value="disabled" disabled>
+						<hr>
+						<span class="select">
+							<select>
+								<option value="">option1</option>
+								<option value="">option2</option>
+								<option value="">option3</option>
+								<option value="">option4</option>
+							</select>
+						</span>
+						<span class="select">
+							<select disabled>
+								<option value="">disabled</option>
+								<option value="">option2</option>
+								<option value="">option3</option>
+								<option value="">option4</option>
+							</select>
+						</span>
+						<hr>
+						<label class="radio">
+							<input type="radio">
+							<i></i>
+							<span>라디오 기본</span>
+						</label>
+						<label class="radio">
+							<input type="radio" checked>
+							<i></i>
+							<span>라디오 선택</span>
+						</label>
+						<label class="radio">
+							<input type="radio" disabled>
+							<i></i>
+							<span>라디오 선택불가</span>
+						</label>
+						<label class="radio">
+							<input type="radio" checked disabled>
+							<i></i>
+							<span>라디오 선택불가</span>
+						</label>
+						<hr>
+						<label class="checkbox">
+							<input type="checkbox">
+							<i></i>
+							<span>체크박스 기본</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" checked>
+							<i></i>
+							<span>체크박스 선택</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" disabled>
+							<i></i>
+							<span>체크박스 선택불가</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" checked disabled>
+							<i></i>
+							<span>체크박스 선택불가</span>
+						</label>
+						<hr>
+						<label class="checkbox">
+							<input type="checkbox" class="checkAll" data-group="group1">
+							<i></i>
+							<span>체크박스 그룹 전체</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" data-group="group1" data-trigger="group1">
+							<i></i>
+							<span>체크박스 그룹1</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" data-group="group1" data-trigger="group1">
+							<i></i>
+							<span>체크박스 그룹1</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" class="checkAll" data-group="group2">
+							<i></i>
+							<span>그룹 전체2</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" data-group="group2" data-trigger="group2">
+							<i></i>
+							<span>그룹2</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" data-group="group2" data-trigger="group2">
+							<i></i>
+							<span>그룹2</span>
+						</label>
+						<hr>
+						<textarea class="textarea" title="내용" placeholder="내용입력하세요."></textarea>
+						<hr>
+						<div class="file-box">
+						  <input class="upload-name" value="" disabled="disabled">
+						  <label for="ex_filename" class="button button-bg01">찾아보기</label>
+						  <input type="file" id="ex_filename" class="upload-hidden">
+						</div>
+						<hr>
+						<!-- date-search -->
+						<div class="date-search">
+							<label class="radio">
+								<input type="radio" name="date" checked="checked">
+								<i></i>
+								<span>전월</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="date">
+								<i></i>
+								<span>최근 3개월</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="date">
+								<i></i>
+								<span>최근 6개월</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="date" class="radio-date">
+								<i></i>
+								<span>직접설정</span>
+							</label>
+							<div class="inp-wrap">
+								<div class="date"><input type="text" class="input" title="시작 날짜" placeholder="YYYY-MM-DD" readonly="readonly"></div>
+								<span>~</span>
+								<div class="date"><input type="text" class="input" title="종료 날짜" placeholder="YYYY-MM-DD" readonly="readonly"></div>
+							</div>
+							<div class="date-wrap" style="display: none;">
+								<div class="date"><input type="text" class="input" title="시작 날짜" placeholder="YYYY-MM-DD"></div>
+								<span>~</span>
+								<div class="date"><input type="text" class="input" title="종료 날짜" placeholder="YYYY-MM-DD"></div>
+							</div>
+						</div>
+						<!-- //date-search -->
+					</section>
+					<section class="guide-section" id="accordion">
+						<h2 class="guide-title">accordion</h2>
+						<h3 class="guide-title">accordion-type01</h3>
+						<div class="accordion accordion-type01">
+							<div class="acc-head">
+								<div>유형</div>
+								<div>문의제목</div>
+								<div>등록일</div>
+								<div>답변여부</div>
+							</div>
+							<div class="acc-body no-data">
+								<p>
+									<i class="icon icon-data"></i>
+									1:1 문의 내역이 존재하지 않습니다.
+								</p>
+							</div>
+							<div class="acc-body">
+								<a href="#" class="acc-tit" role="button">
+									<div class="ctg"><span class="label label-bg01">회원가입/로그인</span></div>
+									<div class="tit"><p>제목 최대 한줄 노출 활성화(.active)시 제목부분이 전체 노출되며 상세 내용을 확인 가능합니다.</p></div>
+									<div class="date">2020.00.00</div>
+									<div class="answer"><span class="color04">처리중</span></div>
+								</a>
+								<div class="acc-cont">
+									<dl>
+										<dt>문의유형</dt>
+										<dd><span class="label label-bg01">회원가입/로그인</span></dd>
+										<dt>첨부파일</dt>
+										<dd><a href="#"><i class="icon icon-file"></i>test.jpg</a></dd>
+										<dt>문의내용</dt>
+										<dd>
+											문의내용 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="acc-body">
+								<a href="#" class="acc-tit" role="button">
+									<div class="ctg"><span class="label label-bg01">정산/지급</span></div>
+									<div class="tit"><p>제목 최대 한줄 노출</p></div>
+									<div class="date">2020.00.00</div>
+									<div class="answer"><span class="color01">문의접수</span></div>
+								</a>
+								<div class="acc-cont">
+									<dl>
+										<dt>문의유형</dt>
+										<dd><span class="label label-bg01">정산/지급</span></dd>
+										<dt>첨부파일</dt>
+										<dd><a href="#"><i class="icon icon-file"></i>test.jpg</a></dd>
+										<dt>문의내용</dt>
+										<dd>문의내용</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="acc-body">
+								<a href="#" class="acc-tit" role="button">
+									<div class="ctg"><span class="label label-bg01">탈퇴/이용제한</span></div>
+									<div class="tit"><p>제목 최대 한줄 노출</p></div>
+									<div class="date">2020.00.00</div>
+									<div class="answer"><span class="color03">답변완료</span></div>
+								</a>
+								<div class="acc-cont">
+									<dl>
+										<dt>문의유형</dt>
+										<dd><span class="label label-bg01">탈퇴/이용제한</span></dd>
+										<dt>첨부파일</dt>
+										<dd><a href="#"><i class="icon icon-file"></i>test.jpg</a></dd>
+										<dt>문의내용</dt>
+										<dd>문의내용</dd>
+									</dl>
+									<div class="answer-area">
+										<strong>답변완료</strong><span>YYYY.MM.DD</span><span>HH.MM.SS</span>
+										<div class="card">
+											<div class="card-cont">
+												<p class="text small">
+													안녕하세요. 고객님. 고객님께서 전전월 K파트너스로 활동하시면 발생한 수익금이 현재 리포트에 보여지는 내역과 동일한 것으로 확인 되십니다.<br>
+													더욱 나은 서비스를 제공할 수 있도록 최선을 다하겠습니다.
+													감사합니다.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="guide-title">accordion-type02</h3>
+						<div class="accordion accordion-type02">
+							<ul>
+								<li class="acc-body">
+									<a href="#" class="acc-tit" role="button">
+										<p class="tit">제목 영역입니다</p>
+										<i class="icon icon-arrow-ani">자세히보기</i>
+									</a>
+									<div class="acc-cont">
+										<div>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. <a href="#" class="link-txt">바로가기</a></div>
+									</div>
+								</li>
+								<li class="acc-body">
+									<a href="#" class="acc-tit" role="button">
+										<p class="tit"><span>제목 영역입니다 제목은 전체 노출입니다.</span><i class="icon icon-arrow-ani">자세히보기</i></p>
+									</a>
+									<div class="acc-cont">
+										<div>궁금한거 다 알려드려요</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="guide-section" id="layerPop">
+						<h2 class="guide-title">layerPop</h2>
+						<button class="button" onclick="obj.layerOpen('layer01', 640)">팝업</button>
+						<button class="button" onclick="obj.layerOpen('layer02', 640)">팝업</button>
+					</section>
+				</div>
+			</main>
+			<!-- //content -->
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<!-- //footer -->
+	</div>
+	<!-- //wrap -->
+	<!-- 팝업 -->
+	<div class="layerPop layer01 layer-result">
+		<div class="layer-inner">
+			<strong class="layer-tit">실적월 2021.04</strong>
+			<div class="layer-container">
+				<div class="layer-cont">
+					<!-- box -->
+					<div class="box result-box">
+						<div class="row-wrap">
+							<div class="col">
+								<dl>
+									<dt>클릭수</dt>
+									<dd><strong>70</strong></dd>
+								</dl>
+							</div>
+							<div class="col">
+								<dl>
+									<dt>구매건수</dt>
+									<dd><strong>70</strong></dd>
+								</dl>
+							</div>
+							<div class="col">
+								<dl>
+									<dt>취소건수</dt>
+									<dd><strong>70</strong></dd>
+								</dl>
+							</div>
+							<div class="col">
+								<dl>
+									<dt>전환율</dt>
+									<dd><strong>70</strong>%</dd>
+								</dl>
+							</div>
+							<div class="col">
+								<dl>
+									<dt>구매금액</dt>
+									<dd><strong>123,000</strong>원</dd>
+								</dl>
+							</div>
+							<div class="col">
+								<dl>
+									<dt>취소금액</dt>
+									<dd><strong>123,000</strong>원</dd>
+								</dl>
+							</div>
+							<div class="col">
+								<dl>
+									<dt>수익금</dt>
+									<dd><strong class="color04">123,000</strong>원</dd>
+								</dl>
+							</div>
+							<div class="col">
+								<dl>
+									<dt>추천수익금</dt>
+									<dd><strong>12,000</strong>원</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<!-- //box -->
+					<!-- box -->
+					<div class="box">
+						<p>
+							<strong>OO월 OO은행 계좌로 실적에 따른 수익금 OOO,OOO 원이 지급완료 되었습니다.</strong>
+						</p>
+					</div>
+					<!-- //box -->
+					<!-- board-area -->
+					<div class="board-area">
+						<p>
+							동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+							동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+							동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+							동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+							동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+							동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+							동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+							동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.
+						</p>
+					</div>
+					<!-- //board-area -->
+				</div>
+			</div>
+			<a href="javascript:void(0)" onclick="obj.layerClose(this)"><i class="icon icon-close">닫기</i></a>
+		</div>
+	</div>
+	<!--// 팝업-->
+	<!-- 팝업 -->
+	<div class="layerPop layer02">
+		<div class="layer-inner">
+			<strong class="layer-tit">날짜설정</strong>
+			<div class="layer-container">
+				<div class="layer-cont terms">
+					<div class="area">
+						<!-- date-search -->
+						<div class="date-search">
+							<label class="radio">
+								<input type="radio" name="date" checked="checked">
+								<i></i>
+								<span>전월</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="date">
+								<i></i>
+								<span>최근 3개월</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="date">
+								<i></i>
+								<span>최근 6개월</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="date" class="radio-date">
+								<i></i>
+								<span>직접설정</span>
+							</label>
+							<div class="inp-wrap">
+								<div class="date"><input type="text" class="input" title="시작 날짜" placeholder="YYYY-MM-DD" readonly="readonly"></div>
+								<span>~</span>
+								<div class="date"><input type="text" class="input" title="종료 날짜" placeholder="YYYY-MM-DD" readonly="readonly"></div>
+							</div>
+							<div class="date-wrap" style="display: none;">
+								<div class="date"><input type="text" class="input" title="시작 날짜" placeholder="YYYY-MM-DD"></div>
+								<span>~</span>
+								<div class="date"><input type="text" class="input" title="종료 날짜" placeholder="YYYY-MM-DD"></div>
+							</div>
+						</div>
+						<!-- //date-search -->
+						<!-- card -->
+						<div class="card">
+							<div class="card-cont">
+								<p class="tip">
+									<i class="icon icon-tip"></i>
+									매월 15일이전 조회시 전전월 실적 리포트가 제공됩니다.
+								</p>
+								<p class="tip">
+									<i class="icon icon-tip"></i>
+									최대 240일 이전 실적 리포트까지만 제공됩니다.
+								</p>
+							</div>
+						</div>
+						<!-- //card -->
+						<div class="button-wrap">
+							<button type="button" class="button">취소</button>
+							<button type="button" class="button button-bg02">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="javascript:void(0)" onclick="obj.layerClose(this)"><i class="icon icon-close">닫기</i></a>
+		</div>
+		</div>
+	</div>
+	<!--// 팝업-->
+	<script src="../../js/common/kpCommon.js"></script>
+</body>
+</html>
