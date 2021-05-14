@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+/* bullet.css */
+.bullet li {
+	position: relative;
+	padding-left: 12px;
+}
+.bullet li:before {
+	content: '';
+	position: absolute;
+	left: 0;
+}
+.bullet li:first-child {
+	margin-top: 0;
+}.bullet li {
+	margin-top: 4px;
+	font-size: .882rem;
+}
+.bullet[class*=col] {
+	overflow: hidden;
+}
+.bullet[class*=col] li {
+	float: left;
+	margin: 4px 0 0 0;
+	font-size: 1rem;
+}
+.bullet.col02 li {
+	width: 50%;
+}
+.bullet.col04 li {
+	width: 25%;
+	padding-right: 10px;
+	word-break: keep-all;
+}
+.bullet.col06 li {
+	width: 16.5%;
+}
+.bullet.col07 li {
+	width: 14.2%;
+}
+.bullet-type01 {
+	margin-top: 15px;
+}
+.bullet-type01 li {
+	padding-left: 15px;
+	color: #666;
+	font-size: 13px;
+	letter-spacing: -.3px;
+}
+.bullet-type01 li span {
+	position: absolute;
+	top: 1px;
+	left: 0;
+}
+@media screen and (max-width: 960px) {
+}

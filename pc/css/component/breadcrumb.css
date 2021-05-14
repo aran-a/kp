@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+/* breadcrumb.css */
+.breadcrumb {
+	padding: 15px 0;
+	background-color: #fafafa;
+}
+.breadcrumb .inner {
+	overflow: hidden;
+}
+.breadcrumb .icon-home {
+	width: 14px;
+	height: 14px;
+	margin: -2px 4px 0 0;
+	background: url(../../images/common/spr_common.png) no-repeat -36px 0;
+}
+.breadcrumb li {
+	float: left;
+	position: relative;
+}
+.breadcrumb li + li {
+	margin-left: 20px;
+	padding-left: 20px;
+}
+.breadcrumb li + li:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 6px;
+	height: 11px;
+	background: url(../../images/common/spr_common.png) no-repeat -52px 0;
+}
+.breadcrumb li,
+.breadcrumb li a {
+	display: block;
+	color: #666;
+	font-size: 14px;
+}
+@media screen and (max-width: 960px) {
+	.breadcrumb .inner {
+		padding: 0 20px;
+	}
+}

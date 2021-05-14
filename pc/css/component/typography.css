@@ -1,0 +1,146 @@
+@charset 'UTF-8';
+/* typography.css */
+.heading {
+	position: relative;
+}
+.heading .title {
+	display: block;
+	position: relative;
+	margin-right: 4px;
+	color: #000;
+	font-weight: 700;
+	word-break: break-word;
+	/*white-space: nowrap;*/
+	letter-spacing: -1px;
+}
+.heading .right {
+	/* position: absolute;
+	right: 0;
+	bottom: 0;*/
+	float: right;
+}
+.heading .title + span {
+	font-size: 14px;
+}
+.heading .title > span {
+	font-size: 16px;
+}
+.section [class*=heading-depth]:first-child {
+	margin-top: 0;
+}
+[class*=heading-depth] + [class*=heading-depth] {
+	margin-top: 0;
+}
+.heading-depth01 {
+	margin: 160px 0 15px 0;
+}
+.heading-depth02 {
+	margin: 35px 0 18px;
+}
+.heading-depth03 {
+	margin: 30px 0 10px;
+}
+.heading-depth01 .title {
+	font-size: 28px;
+}
+.heading-depth02 .title {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 400;
+}
+.heading-depth03 .title {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 400;
+}
+.heading-depth04 .title {
+	font-size: 1.412rem;
+}
+.text {
+	word-break: keep-all;
+	letter-spacing: -.5px;
+}
+.small {
+	font-size: 14px;
+	/* font-weight: 300;*/
+}
+.tip {
+	margin-top: 20px;
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+}
+.tip.left {
+	position: relative;
+	z-index: 1;
+	margin-top: 10px;
+	margin-bottom: -3px;
+	margin-left: 30px;
+	padding-left: 23px;
+	text-align: left;
+	letter-spacing: -.8px;
+}
+.tip.left  .icon {
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+.alert + .tip.left {
+	margin-top: 6px;
+}
+@media screen and (max-width: 960px) {
+	[class*=heading-depth]:first-child {
+		/* margin-top: 40px;*/
+	}
+	.heading-depth01 {
+		margin: 75px 0 15px 0;
+	}
+	.heading-depth02 {
+		margin: 25px 0 15px;
+	}
+	.heading-depth03 {
+		margin: 15px 0 10px;
+	}
+	.heading-depth01 .title {
+		font-size: 19px;
+	}
+	.heading-depth02 .title {
+		font-size: 16px;
+	}
+	.heading .title + span,
+	.text.small,
+	.tip {
+		font-size: 12px;
+	}
+	.tip.left {
+		margin-left: 0;
+		padding-left: 15px;
+	}
+	.tip.left  .icon {
+		top: 4px;
+	}
+	/*
+	.heading-depth01 .title.small {
+		font-size: 1.600rem;
+	}
+	.heading-depth03 .title {
+		font-size: 1.3333rem;
+	}
+	.heading-depth04 .title {
+		font-size: 1.1333rem;
+	}*/
+	/* .text {
+		word-break: break-word;
+	}.text.large {
+		font-size: 1.467rem;
+	}
+	.text.small {
+		font-size: 1rem;
+	}
+	.heading-depth01 .title.small span {
+		font-size: 1.133rem;
+	}
+	.box-color + .heading-depth01 {
+		margin-top: 35px;
+	}*/
+}

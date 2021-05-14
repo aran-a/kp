@@ -1,0 +1,126 @@
+@charset 'UTF-8';
+/* paging.css */
+.paging .first:before,
+.paging .last:before,
+.paging .next:before,
+.paging .prev:before {
+	background: url(../../images/common/spr_common.png) no-repeat;
+}
+.board-type02 + .paging,
+.accordion + .paging {
+	margin-top: 60px;
+}
+.paging {
+	position: relative;
+	z-index: 1;
+	min-height: 30px;
+	margin-top: 40px;
+	font-size: 0;
+	text-align: center;
+}
+.board-type01 + .paging {
+	margin-top: 20px;
+}
+.paging .button-paging {
+	width: 414px;
+	height: 51px;
+	border: 1px solid #999;
+	border-radius: 0;
+	color: #666;
+	font-size: 18px;
+	line-height: 50px;
+}
+.paging .icon {
+	margin-left: 8px;
+}
+/* .paging:after,
+.paging:before {
+	content: '';
+	display: table;
+}
+.paging:after {
+	clear: both;
+}
+.paging .left,
+.paging .right {
+	position: absolute;
+	top: 0;
+}
+.paging .left {
+	left: 0;
+}
+.paging .right {
+	right: 0;
+}
+.paging a,
+.paging strong {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	margin: 0 2px;
+	font-size: 16px;
+	line-height: 33px;
+}
+.paging a {
+	color: #333;
+}
+.paging strong {
+	border-radius: 50%;
+	color: #fff;
+	background: #333;
+}
+.paging .first,
+.paging .last,
+.paging .next,
+.paging .prev {
+	overflow: hidden;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	color: transparent;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+.paging .first:before,
+.paging .last:before,
+.paging .next:before,
+.paging .prev:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 16px;
+	height: 12px;
+	margin: -6px 0 0 -8px;
+}
+.paging .first:before {
+	background-position: 0 0;
+}
+.paging .prev:before {
+	background-position: -18px -0;
+}
+.paging .next:before {
+	background-position: -18px -14px;
+}
+.paging .last:before {
+	background-position: 0 -14px;
+}
+.paging .prev {
+	margin-right: 15px;
+	margin-left: 10px;
+}
+.paging .next {
+	margin-right: 10px;
+	margin-left: 15px;
+}*/
+@media screen and (max-width: 960px) {
+	.paging .button-paging {
+		width: 100%;
+	}
+	/*	.paging a,
+	.paging strong {
+		display: none;
+	}*/
+}

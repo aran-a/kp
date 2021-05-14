@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+/* grid.css */
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.heading + .row,
+.row:first-child {
+	margin-top: 0;
+}
+.row {
+	margin-top: 40px;
+	margin-right: -20px;
+	margin-left: -20px;
+}
+.row .col {
+	float: left;
+	position: relative;
+	padding: 0 20px;
+}
+.row .col02 {
+	width: 25%;
+}
+.row .col03 {
+	width: 33.3333%;
+}
+.row .col04 {
+	width: 50%;
+}
+.row .col06 {
+	width: 75%;
+}
+@media screen and (max-width: 960px) {
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.row + .row {
+		margin-top: 40px;
+	}
+	.row .col {
+		float: none;
+		width: 100%;
+		margin-top: 40px;
+		padding: 0;
+	}
+	.row .col:first-child {
+		margin-top: 0;
+	}
+}

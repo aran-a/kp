@@ -1,0 +1,124 @@
+@charset 'UTF-8';
+/* table.css */
+.table:first-child {
+	margin-top: 0;
+}
+.table:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid #fff;
+}
+.table {
+	position: relative;
+	margin-top: 20px;
+	border-top: 1px solid #ececec;
+}
+.box + .table {
+	margin-top: 40px;
+}
+.table table {
+	table-layout: fixed;
+}
+.table caption {
+	margin-bottom: -1px;
+}
+.table th,
+.table td {
+	vertical-align: middle;
+	height: 49px;
+	padding: 13px 20px 12px 20px;
+	border: 1px solid #ececec;
+	border-width: 0 0 1px 0;
+	text-align: center;
+	word-break: break-all;
+}
+.table th {
+	font-weight: 400;
+	background-color: #f7f8fa;
+}
+.table td {
+	color: #666;
+	font-size: 13px;
+}
+.table td a {
+	color: #666;
+}
+.table .bd-es {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table .btn-sorting {
+	padding: 0 10px;
+	font-size: 16px;
+}
+.table .btn-sorting i {
+	margin-left: 8px;
+}
+.table .btn-sorting.ascending i {
+	background-position: -137px -64px;
+}
+.table .btn-sorting.descending i {
+	background-position: -148px -64px;
+}
+.table td .no-data {
+	margin: 0 auto;
+}
+.table-type01 tr:hover {
+	background-color: #fff2ea;
+}
+.table-type02 tbody th {
+	text-align: left;
+}
+/* table scroll*/
+.table.scroll-y .tb-fixed {
+	position: sticky;
+	left: 0;
+	z-index: 10;
+}
+.table.scroll-y tbody .tb-fixed {
+	background-color: #fff;
+}
+.table.scroll-y tbody tr:hover .tb-fixed {
+	background-color: #fff2ea;
+}
+.table.scroll-y .tb-fixed:after {
+	box-shadow: 0 1px 0 3px pink;
+}
+@media screen and (max-width: 960px) {
+	.table th,
+	.table td {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.table thead th {
+		/* height: 54px;*/
+	}
+	/* table-board */
+	.table-board thead {
+		display: none;
+	}
+	.table-board tr,
+	.table-board .bd-date {
+		display: block;
+	}
+	.table-board tr {
+		width: 100%;
+	}
+	.table .btn-sorting {
+		font-size: 13px;
+	}
+	/* table scroll */
+	.table.scroll-y {
+		overflow-y: auto;
+	}
+	.table.scroll-y table {
+		width: 120%;
+	}
+}

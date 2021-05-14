@@ -1,0 +1,232 @@
+@charset 'UTF-8';
+/* button.css */
+button {
+	background: transparent;
+	cursor: pointer;
+}
+.button {
+	display: inline-block;
+	position: relative;
+	height: 40px;
+	padding: 0 20px;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #fff;
+}
+.button[disabled='disabled'],
+.button.disabled {
+	border-color: #999;
+	color: #fff;
+	background-color: #999;
+	cursor: default;
+}
+.button-sizeS {
+	height: 25px;
+	padding: 0 10px;
+	color: #666;
+	font-size: 13px;
+	line-height: 25px;
+}
+.button-sizeM {
+	color: #000;
+	font-size: 14px;
+	font-weight: 700;
+}
+.button-sizeL {
+	min-width: 240px;
+	height: 60px;
+	border: 1px solid #222;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 58px;
+}
+.button-fix {
+	min-width: 140px;
+}
+.button-link {
+	vertical-align: middle;
+	padding: 1px 0;
+	border-bottom: 1px solid #ff472e;
+	font-size: 13px;
+}
+.button-down-txt {
+	color: #666;
+	font-size: 14px;
+}
+.button-down-txt .icon {
+	margin-right: 2px;
+}
+.button-down-txt span {
+	text-decoration: underline;
+}
+.button-wrap {
+	margin-top: 40px;
+	text-align: center;
+}
+.button-wrap:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.button-wrap .left {
+	float: left;
+}
+.button-wrap .right {
+	float: right;
+}
+.button-wrap .button {
+	min-width: 120px;
+	margin: 0 10px;
+}
+[class*=button-bg] {
+	border: 0;
+}
+.button-bg01 {
+	border: 1px solid #ff472e;
+	color: #333;
+	background-color: #fff;
+	transition: all .3s;
+}
+.button-bg02,
+.button-bg01.active {
+	color: #fff;
+	background-color: #ff472e;
+}
+.button-alert {
+	overflow: hidden;
+	position: relative;
+}
+.button-alert span {
+	position: absolute;
+	/* height: 43px; */
+	top: 25px;
+	left: 0;
+	z-index: 1;
+	min-width: 120px;
+	padding: 8px 15px 7px;
+	border: 1px solid #ff472e;
+	border-radius: 9px;
+	font-size: 13px;
+	font-weight: 300;
+	/* transform: translateY(50px);*/
+	white-space: nowrap;
+	line-height: 1.4;
+	background-color: #fff;
+	transition: opacity .3s;
+	box-shadow: rgba(255, 71, 46, .7) 0 0 5px 0;
+	opacity: 0;
+}
+.button-alert span:before {
+	content: '';
+	position: absolute;
+	top: -11px;
+	left: 27px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #ff472e;
+	border-width: 0 1px 1px 0;
+	background-color: #fff;
+	transform: rotate(237deg) skew(20deg);
+	transform-origin: bottom left;
+}
+.button-alert.active {
+	overflow: visible;
+}
+.button-alert.active span {
+	/* transform: translateY(0);*/
+	opacity: 1;
+}
+.button.button-alert span {
+	top: -40px;
+	left: 65%;
+}
+.button.button-alert span:before {
+	top: 24px;
+	bottom: inherit;
+	left: 16px;
+	transform: rotate(56deg) skew(20deg);
+}
+.button.button-alert02 span {
+	top: -50px;
+	left: 75%;
+	width: 195px;
+	text-align: left;
+}
+.button.button-alert02 span:before {
+	top: 42px;
+}
+.button-tooltip {
+	text-align: left;
+}
+.button-icon {
+	height: auto;
+	padding: 0;
+	border: 0;
+	line-height: normal;
+}
+.button-icon .icon {
+	overflow: hidden;
+	color: transparent;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+@media screen and (max-width: 960px) {
+	.button-sizeL {
+		width: 100%;
+		min-width: 0;
+		height: 50px;
+		border-width: 2px;
+		font-size: 1.067rem;
+		line-height: 46px;
+	}
+	.button-down {
+		overflow: hidden;
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		border-radius: 15px;
+		color: transparent;
+		text-indent: 100%;
+		white-space: nowrap;
+		line-height: 28px;
+	}
+	.button-down [class^=icon-] {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-7px, -7px);
+	}
+	.button-down.full {
+		width: 100%;
+		margin-top: 13px;
+		padding: 0 0 0 10px;
+		color: #222;
+		text-align: left;
+		text-indent: inherit;
+		white-space: inherit;
+		background-color: #fff;
+	}
+	.button-down.full [class^=icon-] {
+		right: 10px;
+		left: inherit;
+	}
+	.button-more {
+		width: 100%;
+	}
+	.button-wrap {
+		margin-top: 20px;
+	}
+	.button-tooltip span {
+		left: -60px;
+		max-width: 90px;
+		word-break: break-all;
+		white-space: normal;
+	}
+	.button.button-alert02 span {
+		left: -15%;
+	}
+}
