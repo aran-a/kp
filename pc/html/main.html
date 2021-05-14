@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<meta name="author" content="K파트너즈">
+	<meta name="keyword" content="K파트너즈">
+	<meta name="description" content="K파트너즈 홈페이지">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="/pc/ico/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/pc/css/kpCommon.css">
+	<link rel="stylesheet" href="/pc/css/vender/swiper.min.css"> <!-- 4.5.1 ver  -->
+	<script src="/pc/js/jquery/jquery-2.1.4.min.js"></script>
+	<script src="/pc/js/jquery/jquery-ui.min.js"></script>
+	<script src="/pc/js/swiper.min.js"></script> <!-- 4.5.1 ver  -->
+	<script src="/pc/js/common/webfont.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.min.js"></script>
+	<![endif]-->
+	<title>K파트너즈</title>
+</head>
+<body>
+	<a href="#content" class="skipToContent">본문으로 바로가기</a>
+	<!-- wrap -->
+	<div id="wrap" class="main">
+		<!-- header -->
+		<div id="header" class="header">
+			<!-- header-top -->
+			<div class="header-top">
+				<button type="button" class="btn-mob-open">
+					<i class="icon"></i>
+					<span class="he">menu open</span>
+				</button>
+				<h1 class="logo">
+					<a href="/">
+						<img src="/pc/images/common/img_logo.png" alt="">
+						<span class="he">K파트너즈</span>
+					</a>
+				</h1>
+				<!-- gnb -->
+				<nav id="gnb" class="gnb">
+					<div class="mob-gnb-head">
+						<button type="button" class="btn-mob-close">
+							<i class="icon"></i>
+							<span class="he">menu close</span>
+						</button>
+					</div>
+					<ul class="gnb-list">
+						<!-- '홈' 메뉴 삭제 0412-->
+						<!-- 로그인 후 노출 될 1뎁스 메뉴 -->
+						<li>
+							<a href="/">링크생성</a>
+							<div class="item">
+								<ul>
+									<li><a href="/">상품링크</a></li>
+									<li><a href="/">간편링크 만들기</a></li>
+									<li><a href="/">카테고리 배너</a></li>
+									<li><a href="/">이벤트/프로모션 링크</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- 메뉴 추가 0412 -->
+						<li>
+							<a href="/">홍보자료실</a>
+							<div class="item">
+								<ul>
+									<li><a href="/">상품별자료</a></li>
+									<li><a href="/">추천영상</a></li>
+									<li><a href="/">이달의 사업방향</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- //메뉴 추가  0412-->
+						<li>
+							<a href="/">리포트</a>
+							<div class="item">
+								<ul>
+									<li><a href="/">실적리포트</a></li>
+									<li><a href="/">실적상세</a></li>
+									<li><a href="/">추천인 리포트</a></li>
+									<li><a href="/">정산 리포트</a></li>
+									<li><a href="/">지급 리포트</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- //로그인 후 노출 될 1뎁스 메뉴 -->
+						<li>
+							<a href="/">K파트너스 가이드</a>
+							<div class="item">
+								<ul>
+									<li><a href="/">이용가이드</a></li>
+									<li><a href="/">FAQ </a></li>
+									<li><a href="/">1:1문의하기</a><li>
+									<li><a href="/">이용약관</a></li>
+									<li><a href="/">운영정책</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="/">공지사항/이벤트</a>
+							<div class="item">
+								<ul>
+									<li><a href="/">공지사항/이벤트</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!-- //gnb -->
+				<!-- util -->
+				<div class="util">
+					<span><em>김교원</em>님 (Code: KP0000000)</span>
+					<!-- link -->
+					<ul class="link">
+						<!-- 로그인 전 유틸메뉴  -->
+						<!-- <li>
+							<a href="/">
+								<i class="icon icon-util01"></i>
+								<span>로그인</span>
+							</a>
+						</li>
+						<li>
+							<a href="/">
+								<i class="icon icon-util02"></i>
+								<span>회원가입</span>
+							</a>
+						</li> -->
+						<!-- // 로그인 전 유틸메뉴  -->
+						<!-- 로그인 후 유틸메뉴 -->
+						<li>
+							<a href="/">
+								<i class="icon icon-util03"></i>
+								<span>공지사항</span>
+							</a>
+							<em class="num">999</em>
+						</li>
+						<!-- mypage-wrap -->
+						<li class="mypage-wrap">
+							<a href="#" class="btn">
+								<i class="icon icon-util04"></i>
+								<span>마이페이지</span>
+							</a>
+							<div class="my-item">
+								<strong>마이페이지</strong>
+								<ul>
+									<li><a href="/">개인정보관리</a></li>
+									<li><a href="/">정산정보관리</a></li>
+									<li><a href="/">로그아웃</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- //mypage-wrap -->
+						<!-- //로그인 후 유틸메뉴  -->
+					</ul>
+					<!-- //link -->
+				</div>
+				<!-- //util -->
+			</div>
+			<!-- //header-top -->
+		</div>
+		<!-- //header -->
+		<!-- container -->
+		<div class="container">
+			<!-- content -->
+			<main id="content" class="content">
+				<!-- main-section -->
+				<section class="main-section section01">
+					<div class="main-inner">
+						<div class="top-bg"><img src="/pc/images/main/bg_main_top.png" alt=""></div>
+						<div class="back-box">
+							<!-- 로그인 전  -->
+							<div class="util-wrap">
+								<div class="img-area">
+									<img src="/pc/images/main/img_banner_txt.jpg" alt="달달한 상품링크! 달링 짭짤한 부수입!">
+								</div>
+								<div class="btn-area">
+									<!-- 0512 수정 -->
+									<a href="#" class="link-guide" role="button" onclick="obj.layerOpen('layerPop-guide', 640)"><img src="/pc/images/main/btn_linkGuide.png" alt="달링가이드"></a>
+									<!-- //0512 수정 -->
+									<a href="#" class="link-join" title="바로가기"><img src="/pc/images/main/btn_linkJoin.png" alt="달링가입하기"></a>
+								</div>
+							</div>
+							<!-- //로그인 전  -->
+							<!-- 로그인 후  -->
+							<!-- <div class="util-wrap full">
+								<div class="img-area">
+									<img src="/pc/images/main/img_banner_txt_full.jpg" alt="달달한 상품링크! 달링 짭짤한 부수입!">
+								</div>
+								<div class="board-search main-search">
+									<div class="search-inner">
+										<div class="selInp-wrap">
+											<span class="select">
+												<select title="구분">
+													<option value="">전체</option>
+													<option value="">웰스</option>
+													<option value="">에듀</option>
+													<option value="">구몬</option>
+													<option value="">라이프</option>
+													<option value="">여행</option>
+													<option value="">호텔</option>
+												</select>
+											</span>
+											<input type="text" class="input" title="검색어" placeholder="나만의 달링을 검색해 보세요.">
+										</div>
+										<button type="button"><i class="icon icon-search"></i>검색</button>
+									</div>
+								</div>
+							</div> -->
+							<!-- //로그인 후  -->
+							<div class="main-ef">
+								<div class="slide-wrap">
+									<ul class="prd-sorting">
+										<li><a href="#" role="button">#추천상품</a></li>
+										<li class="active"><a href="#" role="button">#인기상품</a></li>
+										<li><a href="#" role="button">#최다판매상품</a></li>
+									</ul>
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<a href="#">
+													<div class="img-area">
+														<img src="/pc/images/main/img_dummy1.jpg" alt="">
+													</div>
+													<div class="txt-area">
+														<p class="tit">클럭 S미니 마사지기 클럭 S미니 마사지기</p>
+														<ul>
+															<li><span>판매가</span><em>47,000원</em></li>
+															<li><span>수익금</span><strong>234,000원</strong></li>
+														</ul>
+													</div>
+													<div class="check"></div>
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#">
+													<div class="img-area">
+														<img src="https://dummyimage.com/235x235/ffc0cb/fff" alt="">
+													</div>
+													<div class="txt-area">
+														<p class="tit">슬라이드 2</p>
+														<ul>
+															<li><span>판매가</span><em>47,000원</em></li>
+															<li><span>수익금</span><strong>234,000원</strong></li>
+														</ul>
+													</div>
+													<div class="check"></div>
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#">
+													<div class="img-area">
+														<img src="https://dummyimage.com/235x235/feefce/fff" alt="">
+													</div>
+													<div class="txt-area">
+														<p class="tit">슬라이드 3</p>
+														<ul>
+															<li><span>판매가</span><em>47,000원</em></li>
+															<li><span>수익금</span><strong>234,000원</strong></li>
+														</ul>
+													</div>
+													<div class="check"></div>
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#">
+													<div class="img-area">
+														<img src="https://dummyimage.com/235x235/feaa94/fff" alt="">
+													</div>
+													<div class="txt-area">
+														<p class="tit">슬라이드 4</p>
+														<ul>
+															<li><span>판매가</span><em>47,000원</em></li>
+															<li><span>수익금</span><strong>234,000원</strong></li>
+														</ul>
+													</div>
+													<div class="check"></div>
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#">
+													<div class="img-area">
+														<img src="https://dummyimage.com/235x235/b77b7b/fff" alt="">
+													</div>
+													<div class="txt-area">
+														<p class="tit">슬라이드 5</p>
+														<ul>
+															<li><span>판매가</span><em>47,000원</em></li>
+															<li><span>수익금</span><strong>234,000원</strong></li>
+														</ul>
+													</div>
+													<div class="check"></div>
+												</a>
+											</div>
+										</div>
+										<div class="bg-box"><img src="/pc/images/main/bg_backBox01.png" alt=""></div>
+									</div>
+								</div>
+								<div class="ef-enter">
+									<img src="/pc/images/main/bg_activeImgarea.png" alt="">
+									<div class="ef-bounce">
+										<img src="https://dummyimage.com/235x235/ffc0cb/fff" alt="">
+									</div>
+									<img src="/pc/images/main/img_ef_heart01.png" class="ef_heart01" alt="" >
+									<img src="/pc/images/main/img_ef_heart02.png" class="ef_heart02" alt="" >
+									<img src="/pc/images/main/bg_activeImgarea_cover.png" class="cover" alt="" >
+								</div>
+								<div class="ef-link">
+									<span><img src="/pc/images/main/bg_linkHeart.png" alt=""></span>
+									<span><img src="/pc/images/main/bg_linkHeart.png" alt=""></span>
+									<span><img src="/pc/images/main/bg_linkHeart.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="url-form">
+							<input type="text" name="" class="input" readonly="readonly" title="url생성" value="http://test.com">
+							<button type="button" class="button">URL 복사</button>
+						</div>
+					</div>
+				</section>
+				<!-- //main-section -->
+				<!-- main-section -->
+				<section class="main-section section02">
+					<div class="main-inner">
+						<h2 class="main-title">
+							나의 <span class="point">달링</span>이 벌어다 준<br>
+							<strong>수익금을 확인 하세요!</strong>
+						</h2>
+						<!-- 로그인 전 -->
+						<div class="list-wrap">
+							<div class="img">
+								<img src="/pc/images/main/img_section02.png" alt="수익금 확인하세요">
+							</div>
+							<div class="txt-list">
+								<strong>판매현황</strong>
+								<ul>
+									<li class="heart01">웰스 mini S 정수기</li>
+									<li class="heart01">웰스 제트블루 공기청정기</li>
+									<li class="heart02">에듀 과학소년 전집</li>
+									<li class="heart02">초등 빨간펜</li>
+									<li class="heart03">더 스위트 호텔 제주</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //로그인 전 -->
+						<!-- 로그인 후  -->
+						<!-- <h3 class="main-title">일별 리포트</h3>
+						<div class="box box-type01">
+							<dl>
+								<dt>클릭수</dt>
+								<dd><strong>21</strong></dd>
+							</dl>
+							<dl>
+								<dt>구매수</dt>
+								<dd><strong>4</strong></dd>
+							</dl>
+							<dl>
+								<dt>매출액</dt>
+								<dd><strong>999,000</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>수익금</dt>
+								<dd><strong>16,000</strong>원</dd>
+							</dl>
+						</div>
+						<div class="box box-type01 chart-wrap">
+							chart area
+						</div> -->
+						<!-- //로그인 후  -->
+					</div>
+				</section>
+				<!-- //main-section -->
+				<!-- main-section -->
+				<section class="main-section section03">
+					<div class="main-inner">
+						<!-- 로그인 전 -->
+						<h2 class="main-title">아직도 <span class="point">달링</span>을 잘 모르시겠나요?</h2>
+						<div class="step-wrap">
+							<div class="box box-type01 step0">
+								<p><span>Step 0</span> K파트너스 회원가입을 합니다.</p>
+								<a href="#" title="바로가기"><span>회원가입 하러가기</span><i class="link-arrow"></i></a>
+							</div>
+							<div class="step-row">
+								<div class="item step1">
+									<div class="box box-type01">
+										<p>
+											<span>Step 1</span>
+											원하는 브랜드 상품의<br>
+											달링을 만듭니다.
+										</p>
+									</div>
+								</div>
+								<div class="item step2">
+									<div class="box box-type01">
+										<p>
+											<span>Step 2</span>
+											SNS채널에 만들어진<br>
+											링크를 공유합니다.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="step-row reverse">
+								<div class="item step3">
+									<div class="box box-type01">
+										<p>
+											<span>Step 3</span>
+											달링을 통해<br>
+											K멤버스에서 상품 주문
+										</p>
+									</div>
+								</div>
+								<div class="item step4">
+									<div class="box box-type01">
+										<p>
+											<span>Step 4</span>
+											판매된 수익금의<br>
+											최대 6.5% 지급
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //로그인 전 -->
+						<!-- 로그인 후 -->
+						<!-- <h3 class="main-title">월간 리포트</h3>
+						<div class="box box-type01 month-report">
+							<div class="month-head">
+								<span class="today">2021.04.14</span>
+								<div class="day-paging">
+									<a href="#" class="btn prev">이전일</a>
+									<a href="#">12</a>
+									<a href="#">13</a>
+									<a href="#" class="active">14</a>
+									<a href="#">15</a>
+									<a href="#">16</a>
+									<a href="#" class="btn next">다음일</a>
+								</div>
+							</div>
+							<div class="month-body">
+								<dl>
+									<dt>클릭수</dt>
+									<dd><strong>223</strong></dd>
+								</dl>
+								<dl>
+									<dt>구매수</dt>
+									<dd><strong>12</strong></dd>
+								</dl>
+								<dl>
+									<dt>총 매출액</dt>
+									<dd><strong>1,134,000</strong>원</dd>
+								</dl>
+								<dl>
+									<dt>총 수익금</dt>
+									<dd><strong>987,000</strong>원</dd>
+								</dl>
+							</div>
+							<div class="month-foot">
+								<a href="#">전체 리포트</a>
+							</div>
+						</div> -->
+						<!-- //로그인 후 -->
+					</div>
+				</section>
+				<!-- //main-section -->
+			</main>
+			<!-- //content -->
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer-wrap">
+					<div class="inner">
+						<div class="info-group">
+							<ul>
+								<li><i class="icon icon-customer"></i><strong>고객센터</strong><em><a herf="tel:1899-8855">1899-8855</a></em></li>
+								<li>평일 : <span>09:00 ~ 18:00</span> (주말/공휴일 휴무)</li>
+							</ul>
+							<div class="button-group">
+								<a href="#" class="button button-sizeM">FAQ</a>
+								<a href="#" class="button button-sizeM">1:1문의</a>
+							</div>
+						</div>
+					</div>
+					<div class="inner">
+						<div class="copy-group">
+							<img src="/pc/images/common/img_logo_footer.png" class="logo" alt="교원 K파트너즈">
+							<p class="tit">(주)교원크리에이티브 IT센터</p>
+							<address>[04539] 서울특별시 중구 을지로 55 (을지로2가)<span>통신판매업신고 : 2018-서울중구-1536</span></address>
+							<p><span>대표이사 : 장동하</span><span>사업자등록번호 : 213-85-15412</span><a herf="#" class="button button-sizeS">사업자 정보 확인</a></p>
+							<p>개인정보 보호책임자: 이광열<a herf="#" class="button button-sizeS">개인정보 처리방침</a></p>
+							<p class="copy">COPYRIGHT &copy; KYOWON.ALL RIGHTS RESERVED.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- //footer -->
+	</div>
+	<!--// wrap -->
+	<!-- 0512 추가 팝업 -->
+	<div class="layerPop layerPop-guide">
+		<div class="layer-inner">
+			<strong class="layer-tit">달링이용가이드</strong>
+			<div class="layer-container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="/pc/images/main/img_guide01.jpg" alt="상품검색 Pick! 추천상품 Pick!">
+						</div>
+						<div class="swiper-slide">
+							<img src="/pc/images/main/img_guide02.jpg" alt="상품링크 달링 득템! SNS 공유까지!">
+						</div>
+						<div class="swiper-slide">
+							<img src="/pc/images/main/img_guide03.jpg" alt="한번에 보는 불어나는 수익금 확인">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<a href="javascript:void(0)" onclick="obj.layerClose(this)"><i class="icon icon-close">닫기</i></a>
+		</div>
+	</div>
+	<!--// 0512 추가 팝업-->
+	<script src="/pc/js/common/kpCommon.js"></script>
+</body>
+</html>
