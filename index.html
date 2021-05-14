@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="/pc/ico/favicon.ico" type="image/x-icon">
+	<title>K파트너즈 플랫폼 구축 Coding Files</title>
+	<style type="text/css">
+		body {margin: 0; padding: 5px;}
+		body * {font-family: 'Malgun Gothic','dotum';}
+		h1 {margin: 20px;}
+		h1 span { font-size:14px; color:coral;}
+		table {border-collapse: collapse; width: 100%; table-layout: fixed; border:1px solid #ddd;}
+		th {background: #eee; border: 1px solid #ddd; font-size: 11px; color: #333; padding: 3px 0 2px 0; text-align: center; font-weight: normal;}
+		td {background: #fff; border: 1px solid #ddd; font-size: 11px; text-align: left; padding: 4px; color: #333;}
+		td.linetitle {background: #dec; color: #000; padding: 5px 5px 3px 5px;}
+		a {color: #333; text-decoration: none; font-size:11px;}
+		a:hover {color: #aaa; text-decoration: underline;}
+		.center {text-align: center;}
+		.right {text-align: right;}
+		.update { text-align: right; font-size: 11px; margin: 5px 0 0 0;}
+		/* tab */
+		#tabs {padding: 20px;}
+		#tabs ul {margin: 0; padding: 0; width: 100%; text-align: center;}
+		#tabs ul > li {list-style-type: none; display: inline-block; vertical-align: middle; width: 26%; padding: 8px 0; border: 1px solid #ddd; border-radius: 4px; margin-left: 4px; font-size: 13px; cursor: pointer;}
+		#tabs ul > li:first-child {margin-left: 0;}
+		#tabs ul > li.tabActiveHeader {font-weight: bold;}
+		.txtC {text-align: center;}
+		.grayTr td {background: #ddd;}
+		#tabs ul > li#tabHeader_1.tabActiveHeader {background: #b9cab5; border: 1px solid #b9cab5;}
+		#tabs ul > li#tabHeader_2.tabActiveHeader {background: #d5bdaa; border: 1px solid #d5bdaa;}
+	</style>
+	<script type="text/javascript">
+		var no = 0;
+		function viewlist(depth1, depth2, depth3, id, url, date, state, etc) {
+			no = no + 1;
+			document.write("<tr><td class='center'>"+no+"</td><td>"+depth1+"</td><td>"+depth2+"</td><td>"+depth3+"</td><td>"+id+"</td><td><nobr><a href='"+url+"' target='_blank'>"+url+"</a></nobr></td><td class='center'>"+date+"</td><td class='center'>"+state+"</td><td>"+etc+"</td></tr>");
+		}
+		function viewtitle(title) {
+			document.write("<tr><td colspan='9' class='linetitle'>"+title+"</td></tr>");
+		}
+	</script>
+</head>
+<body>
+	<h1>K파트너즈 플랫폼 구축 HTML Coding Files <span>state: O완료 / X미완료 수급대기 / △수정예정</span></h1>
+	<div id="tabContainer">
+		<!-- <div id="tabs">
+			<ul>
+				<li id="tabHeader_1">Front</li>
+				<li id="tabHeader_2">Mobile</li>
+			</ul>
+		</div> -->
+		<div id="tabscontent">
+			<div class="tabpage" id="tabpage_1">
+				<table class="front">
+					<colgroup>
+						<col style="width: 3%;">
+						<col style="width: 10%;">
+						<col style="width: 8%;">
+						<col style="width: 12%;">
+						<col style="width: 5%;">
+						<col style="width: 13%;">
+						<col style="width: 8%;">
+						<col style="width: 5%;">
+						<col style="width: auto;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>Depth1</th>
+							<th>Depth2</th>
+							<th>Depth3</th>
+							<th>ID</th>
+							<th>Url</th>
+							<th>Date</th>
+							<th>State</th>
+							<th>ETC</th>
+						</tr>
+					</thead>
+					<tbody>
+<script type="text/javascript">
+	viewtitle("Main");
+	viewlist('main','', '','' , '/pc/html/main/main.html', '2021-05-04','O', '[5.12]이용가이드 팝업추가');
+	viewlist('layout','', '','' , '/pc/html/temp/layout.html', '2021-04-12','O', '풋터미정, [4.12]gnb 메뉴추가, [4.20]풋터완료');
+	//
+	viewtitle("error");
+	viewlist('error','', '','' , '/pc/html/error/error01.html', '2021-05-10','O', '');
+	viewlist('error','', '','' , '/pc/html/error/error02.html', '2021-05-10','O', '');
+	//링크생성
+	viewtitle("링크생성 (link)");
+	viewlist('링크생성', '상품링크', '(전체상품/판매상품/추천상품 + 검색결과)','KP_00000001', '/pc/html/link/KP_00000001.html','2021-04-07' ,'O', '');
+	viewlist('링크생성','상품링크', '링크생성 및 QR코드 생성', 'KP_00000004', '/pc/html/link/KP_00000004.html','2021-04-07' ,'O', '');
+	viewlist('링크생성','간편링크 만들기', '', 'KP_00000005', '/pc/html/link/KP_00000005.html','2021-04-07' ,'O', '');
+	viewlist('링크생성','카테고리 배너', '', 'KP_00000006', '/pc/html/link/KP_00000006.html','2021-04-07' ,'O', '');
+	viewlist('링크생성','이벤트/프로모션 링크', '목록', 'KP_00000007', '/pc/html/link/KP_00000007.html','2021-04-07' ,'O', '');
+	viewlist('링크생성','이벤트/프로모션 링크', '상세', 'KP_00000008', '/pc/html/link/KP_00000008.html','2021-04-07' ,'O', '');
+	//홍보자료실
+	viewtitle("홍보자료실 (pr)");
+	viewlist('홍보자료실','상품별자료', '목록','KP_00000050' , '/pc/html/pr/KP_00000050.html', '2021-04-22','O', '');
+	viewlist('홍보자료실','상품별자료', '상세','KP_00000051' , '/pc/html/pr/KP_00000051.html', '2021-04-22','O', '');
+	viewlist('홍보자료실','추천영상', '목록','KP_00000052' , '/pc/html/pr/KP_00000052.html', '2021-04-22','O', '');
+	viewlist('홍보자료실','추천영상', '상세','KP_00000053' , '/pc/html/pr/KP_00000053.html', '2021-04-22','O', '');
+	viewlist('홍보자료실','이달의 사업방향', '목록','KP_00000054' , '/pc/html/pr/KP_00000054.html', '2021-04-22','O', '');
+	viewlist('홍보자료실','이달의 사업방향', '상세','KP_00000055' , '/pc/html/pr/KP_00000055.html', '2021-04-22','O', '');
+	//리포트
+	viewtitle("리포트 (report)");
+	viewlist('리포트','실적리포트', '실시간 실적', 'KP_00000101', '/pc/html/report/KP_00000101.html','2021-05-07' ,'O', '');
+	viewlist('리포트','실적리포트', '일별 실적', 'KP_00000101_02', '/pc/html/report/KP_00000101_02.html','2021-05-07' ,'O', '');
+	viewlist('리포트','실적리포트', '월별 실적', 'KP_00000102', '/pc/html/report/KP_00000102.html','2021-05-07' ,'O', '');
+	viewlist('리포트','실적상세', '실시간 상세', 'KP_00000104', '/pc/html/report/KP_00000104.html','2021-05-07' ,'△', '모바일테이블 UI 확인필요');
+	viewlist('리포트','실적상세', '상품', 'KP_00000104_02', '/pc/html/report/KP_00000104_02.html','2021-05-07' ,'△', '모바일테이블 UI 확인필요');
+	viewlist('리포트','실적상세', '링크 형태', 'KP_00000105', '/pc/html/report/KP_00000105.html','2021-05-07' ,'O', '');
+	viewlist('리포트','추천인 리포트', '', 'KP_00000108', '/pc/html/report/KP_00000108.html','2021-05-07' ,'△', '모바일테이블 UI 확인필요');
+	viewlist('리포트','정산 리포트', '', 'KP_00000110', '/pc/html/report/KP_00000110.html','2021-05-07' ,'△', '모바일테이블 UI 확인필요');
+	viewlist('리포트','지급 리포트', '', 'KP_00000112', '/pc/html/report/KP_00000112.html','2021-05-07' ,'△', '모바일테이블 UI 확인필요');
+	//K파트너스 가이드
+	viewtitle("K파트너스가이드 (support)");
+	viewlist('K파트너스가이드','이용가이드', '', 'KP_00000021', '/pc/html/support/KP_00000021.html','2021-05-12' ,'X', '콘텐츠수급필요');
+	viewlist('K파트너스가이드','FAQ', '', 'KP_00000022', '/pc/html/support/KP_00000022.html','2000-04-22' ,'O', '');
+	viewlist('K파트너스가이드','1:1 문의하기', '', 'KP_00000023', '/pc/html/support/KP_00000023.html','2000-04-22' ,'O', '');
+	viewlist('K파트너스가이드','이용약관', '', 'KP_00000023', '/pc/html/support/KP_00000023_02.html','2021-05-12' ,'X', '콘텐츠수급필요');
+	viewlist('K파트너스가이드','운영정책', '', 'KP_00000024', '/pc/html/support/KP_00000024.html','2021-05-12' ,'X', '콘텐츠수급필요');
+	//공지사항/이벤트
+	viewtitle("공지사항/이벤트 (notice)");
+	viewlist('공지사항/이벤트','공지사항/이벤트', '목록', 'KP_00000025', '/pc/html/notice/KP_00000025.html','2000-04-22' ,'O', '');
+	viewlist('공지사항/이벤트','공지사항/이벤트', '상세', 'KP_00000026', '/pc/html/notice/KP_00000026.html','2000-04-22' ,'O', '');
+	//회원가입
+	viewtitle("회원가입 (member)");
+	viewlist('회원가입','K멤버스 회원 인증','' , 'KP_00000011', '/pc/html/member/KP_00000011.html', '2021-04-20' ,'O', '');
+	viewlist('회원가입','(파트너 기본 정보등록)','' , 'KP_00000012', '/pc/html/member/KP_00000012.html', '2021-04-12' ,'O', '(약관)내용보기 수급필요');
+	viewlist('회원가입','(파트너 전산정보 등록)','' , 'KP_00000013', '', '2021-04-12' ,'O', '페이지 삭제');
+	viewlist('회원가입','가입완료','' , 'KP_00000014', '/pc/html/member/KP_00000014.html', '2021-04-12' ,'O', '');
+	//마이페이지
+	viewtitle("마이페이지 (member)");
+	viewlist('마이페이지','개인 정보 관리','' , 'KP_00000016', '/pc/html/member/KP_00000016.html', '2021-04-12' ,'O', '');
+	viewlist('마이페이지','정산정보 관리','' , 'KP_00000017', '/pc/html/member/KP_00000017.html', '2021-04-12' ,'O', '');
+	viewlist('마이페이지','1:1 문의내역','' , 'KP_00000018', '/pc/html/member/KP_00000018.html', '2000-04-22' ,'O', '');
+	viewlist('마이페이지','회원탈퇴', '', 'KP_00000019', '/pc/html/member/KP_00000019.html','2021-04-12' ,'O', '');
+	viewlist('마이페이지','비회원 회원가입안내', '', 'KP_00000020', '/pc/html/member/KP_00000020.html','2021-04-12' ,'O', '');
+</script>
+					</tbody>
+				</table>
+			</div>
+			<!-- <div class="tabpage" id="tabpage_2"></div> -->
+		</div>
+		<script type="text/javascript">
+			//탭
+			window.onload=function() {
+				var container = document.getElementById("tabContainer");
+				var tabcon = document.getElementById("tabscontent");
+				/*var navitem = document.getElementById("tabHeader_1");
+				var ident = navitem.id.split("_")[1];
+				navitem.parentNode.setAttribute("data-current",ident);
+				navitem.setAttribute("class","tabActiveHeader");*/
+				var pages = tabcon.getElementsByTagName("div");
+				for (var i = 1; i < pages.length; i++) {
+					pages.item(i).style.display="none";
+				};
+				var tabs = container.getElementsByTagName("li");
+				for (var i = 0; i < tabs.length; i++) {
+					tabs[i].onclick=displayPage;
+				}
+			}
+			function displayPage() {
+				var current = this.parentNode.getAttribute("data-current");
+				document.getElementById("tabHeader_" + current).removeAttribute("class");
+				document.getElementById("tabpage_" + current).style.display="none";
+				var ident = this.id.split("_")[1];
+				this.setAttribute("class","tabActiveHeader");
+				document.getElementById("tabpage_" + ident).style.display="block";
+				this.parentNode.setAttribute("data-current",ident);
+			}
+			//update
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1; //January is 0!
+			var yyyy = today.getFullYear();
+			if(dd<10) {
+				dd='0'+dd
+			}
+			if(mm<10) {
+				mm='0'+mm
+			}
+			today = yyyy+'.'+mm+'.'+dd;
+			document.getElementById("day");
+			document.write('<p class="update">last update:' + '<span class="day">'+ today +'</span></p>');
+		</script>
+</body>
+</html>
